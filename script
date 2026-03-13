@@ -970,27 +970,27 @@ end
 
 function ESPPlayers()
 
+	-- Loop infinito enquanto a opção estiver selecionada
 	while selecionados["Players"] do
-
 		for _,p in pairs(game.Players:GetPlayers()) do
-
-			if p ~= player then
-
-				if p.Character and p.Character:FindFirstChild("Head") then
-
-					criarESP(
-						p.Character.Head,
-						p.Name,
-						Color3.fromRGB(255,255,0)
-					)
-
+			if p ~= game.Players.LocalPlayer then
+				local char = p.Character
+				if char then
+					local part = char:FindFirstChild("HumanoidRootPart") or char:FindFirstChild("Head")
+					if part then
+						-- Cria ESP se não existir
+						if not part:FindFirstChild("ESPLabel") then
+							criarESP(
+								part,
+								p.Name,
+								Color3.fromRGB(255,255,0)
+							)
+						end
+					end
 				end
-
 			end
-
 		end
-
-		task.wait(1)
+		task.wait(1) -- Atualiza a cada 1 segundo
 	end
 
 end
