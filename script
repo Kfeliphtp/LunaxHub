@@ -876,7 +876,22 @@ for i,v in ipairs(options) do
 			option.Text = "   "..v.."  ☐"
 			selecionados[v] = nil
 		end
+		
+			-- DESATIVAR ESP
+			if v == "Players" then
+				removerESP("PlayerESP")
+			end
 
+			if v == "Brainrot" then
+				removerESP("ESPLabel")
+			end
+
+			if v == "Lucky Block" then
+				removerESP("ESPLabel")
+			end
+
+		end
+	
 		local count = 0
 		for _ in pairs(selecionados) do
 			count += 1
@@ -920,6 +935,22 @@ local function distancia(obj)
 	end
 
 	return 0
+end
+
+-------------------------------------------------
+-- REMOVER ESP
+-------------------------------------------------
+
+local function removerESP(nome)
+
+	for _,v in pairs(workspace:GetDescendants()) do
+
+		if v.Name == nome then
+			v:Destroy()
+		end
+
+	end
+
 end
 
 -------------------------------------------------
@@ -1020,7 +1051,32 @@ function ESPPlayers()
 end
 
 -------------------------------------------------
--- ESP BRAINROT (detecta no mapa inteiro)
+-- PEGAR NOME DO BRAINROT
+-------------------------------------------------
+
+local function pegarNomeBrainrot(obj)
+
+	if obj:FindFirstChild("DisplayName") then
+		return obj.DisplayName.Value
+	end
+
+	if obj:FindFirstChild("BrainrotName") then
+		return obj.BrainrotName.Value
+	end
+
+	-- tenta pegar texto de gui
+	for _,v in pairs(obj:GetDescendants()) do
+		if v:IsA("TextLabel") then
+			return v.Text
+		end
+	end
+
+	return obj.Name
+
+end
+
+-------------------------------------------------
+-- ESP BRAINROT
 -------------------------------------------------
 
 function ESPBrainrot()
@@ -1043,9 +1099,11 @@ function ESPBrainrot()
 
 				if part and not part:FindFirstChild("ESPLabel") then
 
+					local nome = pegarNomeBrainrot(v)
+
 					criarESP(
 						part,
-						v.Name,
+						nome,
 						Color3.fromRGB(255,0,255)
 					)
 
@@ -1087,6 +1145,7 @@ function ESPLucky()
 	end
 
 end
+
 -------------------------------------------------
 -- ABRIR / FECHAR MENU
 -------------------------------------------------
