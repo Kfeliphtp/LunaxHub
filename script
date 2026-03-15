@@ -364,7 +364,7 @@ end)
 local botao6 = Instance.new("ImageButton")
 botao6.Parent = scroll
 botao6.Size = UDim2.new(0,250,0,50)
-botao6.Position = UDim2.new(0,0,0,280)
+botao6.Position = UDim2.new(0,5,0,210)
 botao6.BackgroundTransparency = 1
 botao6.Image = "rbxassetid://108930673431145"
 
@@ -417,40 +417,25 @@ botao6.MouseButton1Click:Connect(function()
 end)
 
 ------------------------------------------------
-
 -- PLAYER
 local player = game.Players.LocalPlayer
 local char = player.Character or player.CharacterAdded:Wait()
 local hrp = char:WaitForChild("HumanoidRootPart")
 
 --------------------------------------------------
--- AUTO COLECT COINS
+-- COLETAR COINS
 --------------------------------------------------
-
-local ativo1 = true
 
 local function coletar()
 
 	for _,v in pairs(workspace:GetDescendants()) do
 		if v:IsA("BasePart") and v.Name == "Collect" then
-
 			firetouchinterest(hrp, v, 0)
 			firetouchinterest(hrp, v, 1)
-
 		end
 	end
 
 end
-
-task.spawn(function()
-	while task.wait(0.5) do
-		if ativo1 then
-			pcall(function()
-				coletar()
-			end)
-		end
-	end
-end)
 
 --------------------------------------------------
 -- PEGAR BRAINROT
@@ -460,10 +445,8 @@ local function pegarBrainrot()
 
 	for _,v in pairs(workspace:GetDescendants()) do
 		if v:IsA("BasePart") and v.Name == "Brainrot" then
-
 			firetouchinterest(hrp, v, 0)
 			firetouchinterest(hrp, v, 1)
-
 		end
 	end
 
@@ -514,6 +497,10 @@ check4.Text = "☐"
 check4.TextScaled = true
 check4.TextColor3 = Color3.fromRGB(0,115,223)
 
+--------------------------------------------------
+-- SISTEMA
+--------------------------------------------------
+
 local ativo4 = false
 
 botao4.MouseButton1Click:Connect(function()
@@ -529,21 +516,19 @@ botao4.MouseButton1Click:Connect(function()
 end)
 
 --------------------------------------------------
--- LOOP AUTO REBIRTH
+-- LOOP AUTO FARM + REBIRTH
 --------------------------------------------------
 
 task.spawn(function()
 
-	while task.wait(1) do
+	while task.wait(0.5) do
 
 		if ativo4 then
 
 			pcall(function()
 
-				-- pega brainrot
+				coletar()
 				pegarBrainrot()
-
-				-- tenta rebirth
 				rebirth()
 
 			end)
@@ -553,7 +538,6 @@ task.spawn(function()
 	end
 
 end)
-
 ------------------------------------------------
 
 
@@ -615,7 +599,7 @@ end)
 local botao5 = Instance.new("ImageButton")
 botao5.Parent = scroll
 botao5.Size = UDim2.new(0,250,0,50)
-botao5.Position = UDim2.new(0,300,0,280)
+botao5.Position = UDim2.new(0,300,0,210)
 botao5.BackgroundTransparency = 1
 botao5.Image = "rbxassetid://108930673431145"
 
@@ -700,7 +684,7 @@ speedFrame.BackgroundTransparency = 1
 local speedImage = Instance.new("ImageLabel")
 speedImage.Parent = speedFrame
 speedImage.Size = UDim2.new(0,250,0,50)
-speedImage.Position = UDim2.new(0,200,0,140)
+speedImage.Position = UDim2.new(0,300,0,140)
 speedImage.BackgroundTransparency = 1
 speedImage.Image = "rbxassetid://108930673431145"
 
@@ -710,8 +694,8 @@ speedImage.Image = "rbxassetid://108930673431145"
 
 local speedText = Instance.new("TextLabel")
 speedText.Parent = speedFrame
-speedText.Size = UDim2.new(0,200,0,30)
-speedText.Position = UDim2.new(0,20,0,220)
+speedText.Size = UDim2.new(0,300,0,30)
+speedText.Position = UDim2.new(0,320,0,150)
 speedText.BackgroundTransparency = 1
 speedText.Text = "Walk Speed"
 speedText.TextColor3 = Color3.new(1,1,1)
@@ -726,7 +710,7 @@ speedText.TextXAlignment = Enum.TextXAlignment.Left
 local speedButton = Instance.new("ImageButton")
 speedButton.Parent = speedFrame
 speedButton.Size = UDim2.new(0,90,0,25)
-speedButton.Position = UDim2.new(1,-400,0,220)
+speedButton.Position = UDim2.new(1,-110,0,150)
 speedButton.Image = "rbxassetid://89730535431644"
 speedButton.BackgroundTransparency = 1
 
@@ -747,7 +731,7 @@ speedButtonText.Font = Enum.Font.SourceSansBold
 local speedMenu = Instance.new("Frame")
 speedMenu.Parent = speedFrame
 speedMenu.Size = UDim2.new(0,150,0,90)
-speedMenu.Position = UDim2.new(1,-340,0,220)
+speedMenu.Position = UDim2.new(1,-290,0,160)
 speedMenu.BackgroundTransparency = 1
 speedMenu.Visible = false
 
