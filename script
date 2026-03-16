@@ -6,6 +6,7 @@ local PlayerGui = player:WaitForChild("PlayerGui")
 local UIS = game:GetService("UserInputService")
 local VirtualUser = game:GetService("VirtualUser")
 local antiAFKConnection
+local selecionados = {}
 
 -- GUI
 local gui = Instance.new("ScreenGui")
