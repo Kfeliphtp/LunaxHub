@@ -412,7 +412,6 @@ end)
 -- BOTÃO AUTO REBIRTH
 --------------------------------------------------
 
-```lua
 local botao4 = Instance.new("ImageButton")
 botao4.Parent = scroll
 botao4.Size = UDim2.new(0,250,0,50)
@@ -525,7 +524,6 @@ task.spawn(function()
 	end
 
 end)
-```
 
 ------------------------------------------------
 
