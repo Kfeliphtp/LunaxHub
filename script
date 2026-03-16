@@ -6,7 +6,6 @@ local PlayerGui = player:WaitForChild("PlayerGui")
 local UIS = game:GetService("UserInputService")
 local VirtualUser = game:GetService("VirtualUser")
 local antiAFKConnection
-local selecionados = {}
 
 -- GUI
 local gui = Instance.new("ScreenGui")
@@ -525,6 +524,7 @@ task.spawn(function()
 	end
 
 end)
+```
 
 ------------------------------------------------
 
@@ -584,41 +584,41 @@ end)
 ------------------------------------------------
 
 
-local botao5 = Instance.new("ImageButton")
-botao5.Parent = scroll
-botao5.Size = UDim2.new(0,250,0,50)
-botao5.Position = UDim2.new(0,300,0,210)
-botao5.BackgroundTransparency = 1
-botao5.Image = "rbxassetid://108930673431145"
+local botao7 = Instance.new("ImageButton")
+botao7.Parent = scroll
+botao7.Size = UDim2.new(0,250,0,50)
+botao7.Position = UDim2.new(0,300,0,210)
+botao7.BackgroundTransparency = 1
+botao7.Image = "rbxassetid://108930673431145"
 
-local texto5 = Instance.new("TextLabel")
-texto5.Parent = botao5
-texto5.Size = UDim2.new(1,-60,1,0)
-texto5.Position = UDim2.new(0,20,0,0)
-texto5.BackgroundTransparency = 1
-texto5.Text = "FPS Boost"
-texto5.TextColor3 = Color3.new(1,1,1)
-texto5.TextSize = 22
-texto5.Font = Enum.Font.SourceSansBold
-texto5.TextXAlignment = Enum.TextXAlignment.Left
+local texto7 = Instance.new("TextLabel")
+texto7.Parent = botao7
+texto7.Size = UDim2.new(1,-60,1,0)
+texto7.Position = UDim2.new(0,20,0,0)
+texto7.BackgroundTransparency = 1
+texto7.Text = "FPS Boost"
+texto7.TextColor3 = Color3.new(1,1,1)
+texto7.TextSize = 22
+texto7.Font = Enum.Font.SourceSansBold
+texto7.TextXAlignment = Enum.TextXAlignment.Left
 
-local check5 = Instance.new("TextLabel")
-check5.Parent = botao5
-check5.Size = UDim2.new(0,40,0,40)
-check5.Position = UDim2.new(1,-55,0.5,-20)
-check5.BackgroundTransparency = 1
-check5.Text = "☐"
-check5.TextScaled = true
-check5.TextColor3 = Color3.fromRGB(0, 115, 223)
+local check7 = Instance.new("TextLabel")
+check7.Parent = botao7
+check7.Size = UDim2.new(0,40,0,40)
+check7.Position = UDim2.new(1,-55,0.5,-20)
+check7.BackgroundTransparency = 1
+check7.Text = "☐"
+check7.TextScaled = true
+check7.TextColor3 = Color3.fromRGB(0, 115, 223)
 
-local ativo5 = false
+local ativo7 = false
 
-botao5.MouseButton1Click:Connect(function()
+botao7.MouseButton1Click:Connect(function()
 
-	ativo5 = not ativo5
+	ativo7 = not ativo7
 
-	if ativo5 then
-		check5.Text = "▣"
+	if ativo7 then
+		check7.Text = "▣"
 
 		-- tirar sombras
 		game.Lighting.GlobalShadows = false
@@ -646,7 +646,7 @@ botao5.MouseButton1Click:Connect(function()
 		end
 
 	else
-		check5.Text = "☐"
+		check7.Text = "☐"
 
 		-- voltar qualidade normal
 		settings().Rendering.QualityLevel = Enum.QualityLevel.Automatic
@@ -736,6 +736,8 @@ corner.CornerRadius = UDim.new(0,5)
 -------------------------------------------------
 -- OPÇÕES
 -------------------------------------------------
+
+local selecionados = {}
 
 local options = {
 	"Normal Game",
