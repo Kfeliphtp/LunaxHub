@@ -203,6 +203,7 @@ local function criarBotoesJanela(panel, ImgPanelConfig, ImgPanelHub)
 			panel.BackgroundColor3 = Color3.fromRGB(0,0,0) -- fundo preto
 			panel.BackgroundTransparency = 0
 
+			fecharTudo()
 		else
 
 			panel.Size = tamanhoNormal
@@ -1302,8 +1303,8 @@ FrameBrainrotBuy.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 FrameBrainrotBuy.BorderColor3 = Color3.fromRGB(8, 9, 121)
 FrameBrainrotBuy.BorderSizePixel = 3
 FrameBrainrotBuy.LayoutOrder = -1
-FrameBrainrotBuy.Position = UDim2.new(-0.0689296652, 0, 1.07863137, 0)
-FrameBrainrotBuy.Size = UDim2.new(0, 359, 0, 601)
+FrameBrainrotBuy.Position = UDim2.new(-0.0689296652, 0, 1.03863137, 0)
+FrameBrainrotBuy.Size = UDim2.new(0, 359, 0, 551)
 FrameBrainrotBuy.Visible = false
 
 UICorner.Parent = FrameBrainrotBuy
@@ -1320,7 +1321,7 @@ CommonBrainrot.BackgroundTransparency = 1.000
 CommonBrainrot.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CommonBrainrot.BorderSizePixel = 0
 CommonBrainrot.Position = UDim2.new(0.0976930376, 0, 0.0311553273, 0)
-CommonBrainrot.Size = UDim2.new(0, 291, 0, 66)
+CommonBrainrot.Size = UDim2.new(0, 288, 0, 63)
 CommonBrainrot.Image = "rbxassetid://108930673431145"
 
 CommonText.Name = "CommonText"
@@ -1608,7 +1609,7 @@ EpicBrainrot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 EpicBrainrot.BackgroundTransparency = 1.000
 EpicBrainrot.BorderColor3 = Color3.fromRGB(0, 0, 0)
 EpicBrainrot.BorderSizePixel = 0
-EpicBrainrot.Position = UDim2.new(0.0967075188, 0, 0.652601701, 0)
+EpicBrainrot.Position = UDim2.new(0.0967075188, 0, 0.452601701, 0)
 EpicBrainrot.Size = UDim2.new(0, 291, 0, 66)
 EpicBrainrot.Image = "rbxassetid://108930673431145"
 
@@ -1922,7 +1923,6 @@ SecretText.TextColor3 = Color3.fromRGB(255, 255, 255)
 SecretText.TextSize = 18.000
 --------------------------------------------------------------------------------------------
 function fecharTudo()
-
 	AutoFarmAberto.Visible = false
 	PlayersAberto.Visible = false
 end
