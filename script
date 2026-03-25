@@ -1,121 +1,154 @@
 local player = game.Players.LocalPlayer
 local PanelHub = Instance.new("ScreenGui")
-PanelHub.Parent = player:WaitForChild("PlayerGui")
-
-local UIS = game:GetService("UserInputService")
-local ImgPanelHub = Instance.new("ImageLabel")
-local welcome = Instance.new("TextLabel")
-local the = Instance.new("TextLabel")
-local freeplan = Instance.new("TextLabel")
-local lunaxhub = Instance.new("TextLabel")
-local text1 = Instance.new("TextLabel")
-local text2 = Instance.new("TextLabel")
-local join = Instance.new("TextLabel")
-local link = Instance.new("TextLabel")
-local ButtonOpen = Instance.new("ImageButton")
-local close = Instance.new("TextButton")
-local minimiza = Instance.new("TextButton")
-local HomePanel = Instance.new("TextButton")
-local ImgPanelConfig = Instance.new("ImageLabel")
-local AutoFarmButton = Instance.new("ImageButton")
-local PlayersButton = Instance.new("ImageButton")
-local ScrollAutoFarm = Instance.new("ScrollingFrame")
-local AutoCollectButton = Instance.new("ImageButton")
-local AutoCollectText = Instance.new("TextLabel")
-local AutoCollect = Instance.new("TextButton")
-local AutoBuyButton = Instance.new("ImageButton")
-local AutoBuyText = Instance.new("TextLabel")
-local AutoBuyButton_2 = Instance.new("ImageButton")
-local AutoBuy2Text = Instance.new("TextLabel")
-local FrameBrainrotBuy = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local CommonBrainrot = Instance.new("ImageButton")
-local CommonText = Instance.new("TextLabel")
-local common = Instance.new("TextButton")
-local UncommonBrainrot = Instance.new("ImageButton")
-local uncommon = Instance.new("TextButton")
-local UncommonText = Instance.new("TextLabel")
-local RareBrainrot = Instance.new("ImageButton")
-local Rare = Instance.new("TextButton")
-local RareText = Instance.new("TextLabel")
-local EpicBrainrot = Instance.new("ImageButton")
-local Epic = Instance.new("TextButton")
-local EpicText = Instance.new("TextLabel")
-local LegendaryBrainrot = Instance.new("ImageButton")
-local Legendary = Instance.new("TextButton")
-local LegendaryText = Instance.new("TextLabel")
-local MythicBrainrot = Instance.new("ImageButton")
-local Mythic = Instance.new("TextButton")
-local MythicText = Instance.new("TextLabel")
-local SecretBrainrot = Instance.new("ImageButton")
-local Secret = Instance.new("TextButton")
-local SecretText = Instance.new("TextLabel")
-local AutoBuyButton_3 = Instance.new("ImageButton")
-local AutoSellButton_3 = Instance.new("ImageButton")
-local AutoSellText = Instance.new("TextLabel")
-local AutoSellButton = Instance.new("ImageButton")
-local AutoSell2Text = Instance.new("TextLabel")
-local FrameBrainrotSell = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local CommonBrainrotS = Instance.new("ImageButton")
-local CommonTextS = Instance.new("TextLabel")
-local commonS = Instance.new("TextButton")
-local UncommonBrainrotS = Instance.new("ImageButton")
-local uncommonS = Instance.new("TextButton")
-local UncommonTextS = Instance.new("TextLabel")
-local RareBrainrotS = Instance.new("ImageButton")
-local RareS = Instance.new("TextButton")
-local RareTextS = Instance.new("TextLabel")
-local EpicBrainrotS = Instance.new("ImageButton")
-local EpicS = Instance.new("TextButton")
-local EpicTextS = Instance.new("TextLabel")
-local LegendaryBrainrotS = Instance.new("ImageButton")
-local LegendaryS = Instance.new("TextButton")
-local LegendaryTextS = Instance.new("TextLabel")
-local MythicBrainrotS = Instance.new("ImageButton")
-local MythicS = Instance.new("TextButton")
-local MythicTextS = Instance.new("TextLabel")
-local SecretBrainrotS = Instance.new("ImageButton")
-local SecretS = Instance.new("TextButton")
-local SecretTextS = Instance.new("TextLabel")
-local AutoRebirthButton = Instance.new("ImageButton")
-local AutoRebirthText = Instance.new("TextLabel")
-local AutoRebirth = Instance.new("TextButton")
-local AutoIngredientsButton = Instance.new("ImageButton")
-local AutoIngredientsText = Instance.new("TextLabel")
-local AutoIngredients = Instance.new("TextButton")
-local ScrollPlayers = Instance.new("ScrollingFrame")
-local EspPlayersButton = Instance.new("ImageButton")
-local EspPlayersText = Instance.new("TextLabel")
-local EspPlayers = Instance.new("TextButton")
-local WalkSpeedButton = Instance.new("ImageButton")
-local WalkSpeedText = Instance.new("TextLabel")
-local JumpButton = Instance.new("ImageButton")
-local JumpText = Instance.new("TextLabel")
-local Jump = Instance.new("TextButton")
-local HitBoxButton = Instance.new("ImageButton")
-local HitBoxText = Instance.new("TextLabel")
-local HitBox = Instance.new("TextButton")
-local InvisibleButton = Instance.new("ImageButton")
-local InvisibleText = Instance.new("TextLabel")
-local Invisible = Instance.new("TextButton")
-local AntiHitButton = Instance.new("ImageButton")
-local AntiHitText = Instance.new("TextLabel")
-local AntiHit = Instance.new("TextButton")
 local ButtonPrimario = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local Main = Instance.new("Frame")
+local MainPanel = Instance.new("ImageLabel")
+local config = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
+local ss = Instance.new("TextLabel")
+local aa = Instance.new("ImageLabel")
+local _1 = Instance.new("TextLabel")
+local _2 = Instance.new("TextLabel")
+local _3 = Instance.new("TextLabel")
+local _4 = Instance.new("TextLabel")
+local _5 = Instance.new("TextLabel")
+local _6 = Instance.new("TextLabel")
+local _7 = Instance.new("TextLabel")
+local _8 = Instance.new("TextLabel")
+local _9 = Instance.new("TextLabel")
+local closePanel = Instance.new("TextButton")
+local ConfiPanel = Instance.new("ImageLabel")
+local FrameMainFarm = Instance.new("Frame")
+local MainConfig = Instance.new("ScrollingFrame")
+local farm = Instance.new("Frame")
+local q13 = Instance.new("TextLabel")
+local AutoCollectIMG = Instance.new("ImageLabel")
+local TextoCollect = Instance.new("TextLabel")
+local CollectButton = Instance.new("TextButton")
+local SelectBuy = Instance.new("ImageLabel")
+local TextoCollect_2 = Instance.new("TextLabel")
+local Caixa1 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-
-ButtonPrimario.Parent = PanelHub
-ButtonPrimario.Name = "ButtonPrimario"
-ButtonPrimario.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ButtonPrimario.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ButtonPrimario.BorderSizePixel = 0
-ButtonPrimario.Position = UDim2.new(0.113202501, 0, 0.417780727, 0)
-ButtonPrimario.Size = UDim2.new(0, 50, 0, 50)
-ButtonPrimario.Image = "rbxassetid://110436801700877"
-
-UICorner_3.CornerRadius = UDim.new(0, 100)
-UICorner_3.Parent = ButtonPrimario
+local _1_2 = Instance.new("TextLabel")
+local _1_3 = Instance.new("TextLabel")
+local SelectSell = Instance.new("ImageLabel")
+local TextoCollect_3 = Instance.new("TextLabel")
+local caixa2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local _2_2 = Instance.new("TextLabel")
+local _2_3 = Instance.new("TextLabel")
+local AutoIngredients = Instance.new("ImageLabel")
+local TextoIngredients = Instance.new("TextLabel")
+local caixa3 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local _3_2 = Instance.new("TextLabel")
+local _3_3 = Instance.new("TextLabel")
+local Rebirth = Instance.new("ImageLabel")
+local TextoRebirth = Instance.new("TextLabel")
+local RebirthButton = Instance.new("TextButton")
+local players = Instance.new("Frame")
+local q14 = Instance.new("TextLabel")
+local Speed = Instance.new("ImageLabel")
+local TextoSpeed = Instance.new("TextLabel")
+local SpeedButton = Instance.new("TextButton")
+local Jump = Instance.new("ImageLabel")
+local TextoJump = Instance.new("TextLabel")
+local JumpButton = Instance.new("TextButton")
+local HitBox = Instance.new("ImageLabel")
+local TextoHitBox = Instance.new("TextLabel")
+local HitBoxButton = Instance.new("TextButton")
+local AntiHitBox = Instance.new("ImageLabel")
+local TextoAntiHitBox = Instance.new("TextLabel")
+local AntiHitBoxButton = Instance.new("TextButton")
+local Esp = Instance.new("ImageLabel")
+local TextoEsp = Instance.new("TextLabel")
+local EspButton = Instance.new("TextButton")
+local MainButton = Instance.new("TextButton")
+local MiscButton = Instance.new("TextButton")
+local FrameMisc = Instance.new("Frame")
+local AntiAFK = Instance.new("ImageLabel")
+local AFKTsxt = Instance.new("TextLabel")
+local AFK = Instance.new("TextButton")
+local FPS = Instance.new("ImageLabel")
+local TextoFPS = Instance.new("TextLabel")
+local FBSbutton = Instance.new("TextButton")
+local Invisible = Instance.new("ImageLabel")
+local TextoInvisible = Instance.new("TextLabel")
+local InvisibleButton = Instance.new("TextButton")
+local closePanel2 = Instance.new("TextButton")
+local SelectBuy_2 = Instance.new("Frame")
+local Common = Instance.new("ImageButton")
+local CommonButton = Instance.new("TextButton")
+local CommonText = Instance.new("TextLabel")
+local Uncommon = Instance.new("ImageButton")
+local UncommonButton = Instance.new("TextButton")
+local TextUncommon = Instance.new("TextLabel")
+local Rare = Instance.new("ImageButton")
+local RareButton = Instance.new("TextButton")
+local TextRare = Instance.new("TextLabel")
+local Epic = Instance.new("ImageButton")
+local EpicButton = Instance.new("TextButton")
+local TextEpic = Instance.new("TextLabel")
+local Legendary = Instance.new("ImageButton")
+local LegendaryButton = Instance.new("TextButton")
+local TextLegendary = Instance.new("TextLabel")
+local Mythic = Instance.new("ImageButton")
+local MythicButton = Instance.new("TextButton")
+local TextMythic = Instance.new("TextLabel")
+local Secret = Instance.new("ImageButton")
+local SecretButton = Instance.new("TextButton")
+local TextSecret = Instance.new("TextLabel")
+local IngredientsT = Instance.new("TextLabel")
+local closePanel5 = Instance.new("TextButton")
+local SelectSell_2 = Instance.new("Frame")
+local CommonS = Instance.new("ImageButton")
+local CommonTextS = Instance.new("TextLabel")
+local CommonButtonS = Instance.new("TextButton")
+local UncommonS = Instance.new("ImageButton")
+local UncommonButtonS = Instance.new("TextButton")
+local TextUncommonS = Instance.new("TextLabel")
+local RareS = Instance.new("ImageButton")
+local RareButtonS = Instance.new("TextButton")
+local TextRareS = Instance.new("TextLabel")
+local EpicS = Instance.new("ImageButton")
+local EpicButtonS = Instance.new("TextButton")
+local TextEpicS = Instance.new("TextLabel")
+local LegendaryS = Instance.new("ImageButton")
+local LegendaryButtonS = Instance.new("TextButton")
+local TextLegendaryS = Instance.new("TextLabel")
+local MythicS = Instance.new("ImageButton")
+local MythicButtonS = Instance.new("TextButton")
+local TextMythicS = Instance.new("TextLabel")
+local SecretS = Instance.new("ImageButton")
+local SecretButtonS = Instance.new("TextButton")
+local TextSecretS = Instance.new("TextLabel")
+local Select = Instance.new("TextLabel")
+local closePanel3 = Instance.new("TextButton")
+local IngredientsBuys = Instance.new("Frame")
+local Star = Instance.new("ImageButton")
+local StarText = Instance.new("TextLabel")
+local StarButton = Instance.new("TextButton")
+local Victrola = Instance.new("ImageButton")
+local VictrolaButton = Instance.new("TextButton")
+local TextVictrola = Instance.new("TextLabel")
+local IceEmblem = Instance.new("ImageButton")
+local IceEmblemButton = Instance.new("TextButton")
+local TextIceEmblem = Instance.new("TextLabel")
+local Flower = Instance.new("ImageButton")
+local FlowerButton = Instance.new("TextButton")
+local TextFlower = Instance.new("TextLabel")
+local Phone = Instance.new("ImageButton")
+local PhoneButton = Instance.new("TextButton")
+local TextPhone = Instance.new("TextLabel")
+local Taco = Instance.new("ImageButton")
+local TacoButton = Instance.new("TextButton")
+local TextTaco = Instance.new("TextLabel")
+local Lighter = Instance.new("ImageButton")
+local LighterButton = Instance.new("TextButton")
+local TextLighter = Instance.new("TextLabel")
+local IngredientsT_2 = Instance.new("TextLabel")
+local closePanel4 = Instance.new("TextButton")
 
 pcall(function()
 	game.StarterGui:SetCore("SendNotification", {
@@ -126,348 +159,339 @@ pcall(function()
 	})
 end)
 
-local function criarBotoesJanela(panel, ImgPanelConfig, ImgPanelHub)
-	local minimizado = false
-	local tamanhoNormal = panel.Size
-
-	local homeBtn = Instance.new("TextButton")
-	homeBtn.Parent = panel
-	homeBtn.Size = UDim2.new(0,80,0,30)
-	homeBtn.Position = UDim2.new(0,470,0.06,10)
-	homeBtn.BackgroundTransparency = 1
-	homeBtn.Text = "Home"
-	homeBtn.TextSize = 13
-	homeBtn.TextScaled = false
-	local corTextoNormal = Color3.fromRGB(9, 18, 202)
-	local corTextoHover = Color3.fromRGB(109, 5, 213)
-
-	homeBtn.TextColor3 = corTextoNormal
-
-	homeBtn.MouseEnter:Connect(function()
-		homeBtn.TextColor3 = corTextoHover
-	end)
-
-	homeBtn.MouseLeave:Connect(function()
-		homeBtn.TextColor3 = corTextoNormal
-	end)
-
-	homeBtn.MouseButton1Click:Connect(function()
-		ImgPanelHub.Visible = true
-
-		if panel ~= ImgPanelHub then
-			panel.Visible = false
-		end
-	end)
-
-	local minBtn = Instance.new("TextButton")
-	minBtn.Parent = panel
-	minBtn.Size = UDim2.new(0, 22, 0, 22)
-	minBtn.Position = UDim2.new(0.915, 0, 0, 0)
-	minBtn.BackgroundTransparency = 1
-	minBtn.Text = "–"
-	minBtn.TextSize = 25
-	minBtn.TextColor3 = Color3.new(1,1,1)
-	minBtn.Font = Enum.Font.SourceSans
-
-	local closeBtn = Instance.new("TextButton")
-	closeBtn.Parent = panel
-	closeBtn.Size = UDim2.new(0, 22, 0, 22)
-	closeBtn.Position = UDim2.new(0.955, 0, 0, 0)
-	closeBtn.BackgroundTransparency = 1
-	closeBtn.Text = "x"
-	closeBtn.TextSize = 17
-	closeBtn.TextColor3 = Color3.new(1,1,1)
-
-	local function setVisibleAll(parent, estado)
-		for _, obj in pairs(parent:GetDescendants()) do
-			if obj:IsA("GuiObject") then
-				obj.Visible = estado
-			end
-		end
-	end
-
-	minBtn.MouseButton1Click:Connect(function()
-
-		minimizado = not minimizado
-
-		if minimizado then
-
-			panel.Size = UDim2.new(
-				tamanhoNormal.X.Scale,
-				tamanhoNormal.X.Offset,
-				0,
-				30
-			)
-
-			panel.ImageTransparency = 1 -- some a imagem
-			panel.BackgroundColor3 = Color3.fromRGB(0,0,0) -- fundo preto
-			panel.BackgroundTransparency = 0
-
-			fecharTudo()
-		else
-
-			panel.Size = tamanhoNormal
-			panel.ImageTransparency = 0 -- volta a imagem
-
-		end
-
-		for _,obj in pairs(panel:GetChildren()) do
-			if obj ~= minBtn and obj ~= closeBtn then
-				obj.Visible = not minimizado
-			end
-		end
-
-	end)
-
-
-	closeBtn.MouseButton1Click:Connect(function()
-		panel.Visible = false
-
-		fecharTudo()
-	end)
-end
-
-
+PanelHub.Name = "PanelHub"
+PanelHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 PanelHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ImgPanelHub.Name = "ImgPanelHub"
-ImgPanelHub.Parent = PanelHub
-ImgPanelHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImgPanelHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImgPanelHub.BorderSizePixel = 0
-ImgPanelHub.Position = UDim2.new(0.299372613, 0, 0.098863581, 0)
-ImgPanelHub.Size = UDim2.new(0, 578, 0, 356)
-ImgPanelHub.Image = "rbxassetid://82549910179677"
-ImgPanelHub.Visible = false
-criarBotoesJanela(ImgPanelHub, ImgPanelConfig, ImgPanelHub)
 
-ButtonOpen.Name = "ButtonOpen"
-ButtonOpen.Parent = ImgPanelHub
-ButtonOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ButtonOpen.BackgroundTransparency = 1.000
-ButtonOpen.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ButtonOpen.BorderSizePixel = 0
-ButtonOpen.Position = UDim2.new(0.5, -75, 0.8, -35)
-ButtonOpen.Size = UDim2.new(0, 151, 0, 78)
-ButtonOpen.Image = "rbxassetid://127431849453535"
-----------------------
-welcome.Name = "welcome"
-welcome.Parent = ImgPanelHub
-welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-welcome.BackgroundTransparency = 1.000
-welcome.BorderColor3 = Color3.fromRGB(0, 0, 0)
-welcome.BorderSizePixel = 0
-welcome.Position = UDim2.new(0.0910716269, 0, 0.135593221, 0)
-welcome.Size = UDim2.new(0, 122, 0, 26)
-welcome.Font = Enum.Font.DenkOne
-welcome.Text = "Welcome to"
-welcome.TextColor3 = Color3.fromRGB(256, 256, 256)
-welcome.TextSize = 29.000
-the.Name = "the"
-the.Parent = ImgPanelHub
-the.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-the.BackgroundTransparency = 1.000
-the.BorderColor3 = Color3.fromRGB(0, 0, 0)
-the.BorderSizePixel = 0
-the.Position = UDim2.new(0.0910716269, 0, 0.209039556, 0)
-the.Size = UDim2.new(0, 29, 0, 26)
-the.Font = Enum.Font.DenkOne
-the.Text = "the"
-the.TextColor3 = Color3.fromRGB(256, 256, 256)
-the.TextSize = 29.000
-freeplan.Name = "freeplan"
-freeplan.Parent = ImgPanelHub
-freeplan.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-freeplan.BackgroundTransparency = 1.000
-freeplan.BorderColor3 = Color3.fromRGB(0, 0, 0)
-freeplan.BorderSizePixel = 0
-freeplan.Position = UDim2.new(0.155357137, 0, 0.209039556, 0)
-freeplan.Size = UDim2.new(0, 96, 0, 26)
-freeplan.Font = Enum.Font.DenkOne
-freeplan.Text = "Free Plan"
-freeplan.TextColor3 = Color3.fromRGB(77, 16, 208)
-freeplan.TextSize = 29.000
-lunaxhub.Name = "lunaxhub"
-lunaxhub.Parent = ImgPanelHub
-lunaxhub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-lunaxhub.BackgroundTransparency = 1.000
-lunaxhub.BorderColor3 = Color3.fromRGB(0, 0, 0)
-lunaxhub.BorderSizePixel = 0
-lunaxhub.Position = UDim2.new(0.0910716269, 0, 0.282685873, 0)
-lunaxhub.Size = UDim2.new(0, 122, 0, 26)
-lunaxhub.Font = Enum.Font.DenkOne
-lunaxhub.Text = "of Lunx Hub"
-lunaxhub.TextColor3 = Color3.fromRGB(256, 256, 256)
-lunaxhub.TextSize = 29.000
-text1.Name = "text1"
-text1.Parent = ImgPanelHub
-text1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-text1.BackgroundTransparency = 1.000
-text1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-text1.BorderSizePixel = 0
-text1.Position = UDim2.new(0.0535716291, 0, 0.36960652, 0)
-text1.Size = UDim2.new(0, 222, 0, 23)
-text1.Font = Enum.Font.Fondamento
-text1.Text = "Enjoy the available scripts and features."
-text1.TextColor3 = Color3.fromRGB(256, 256, 256)
-text1.TextSize = 17.000
-text1.TextWrapped = true
-text2.Name = "text2"
-text2.Parent = ImgPanelHub
-text2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-text2.BackgroundTransparency = 1.000
-text2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-text2.BorderSizePixel = 0
-text2.Position = UDim2.new(0.0535716291, 0, 0.436101706, 0)
-text2.Size = UDim2.new(0, 222, 0, 23)
-text2.Font = Enum.Font.Fondamento
-text2.Text = "Stay tuned for updates and new content. and new content."
-text2.TextColor3 = Color3.fromRGB(256, 256, 256)
-text2.TextSize = 17.000
-text2.TextWrapped = true
-join.Name = "join"
-join.Parent = ImgPanelHub
-join.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-join.BackgroundTransparency = 1.000
-join.BorderColor3 = Color3.fromRGB(0, 0, 0)
-join.BorderSizePixel = 0
-join.Position = UDim2.new(0.0535716291, 0, 0.531073651, 0)
-join.Size = UDim2.new(0, 157, 0, 23)
-join.Font = Enum.Font.Unknown
-join.Text = "Join our Discord:"
-join.TextColor3 = Color3.fromRGB(256, 256, 256)
-join.TextSize = 12.000
-join.TextWrapped = true
-link.Name = "link"
-link.Parent = ImgPanelHub
-link.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-link.BackgroundTransparency = 1.000
-link.BorderColor3 = Color3.fromRGB(0, 0, 0)
-link.BorderSizePixel = 0
-link.Position = UDim2.new(0.0135716291, 0, 0.401073651, 0)
-link.Size = UDim2.new(0.1, 261, 0, 153)
-link.Font = Enum.Font.Unknown
-link.Text = "• https://discord.gg/CYFpU79jYa"
-link.TextColor3 = Color3.fromRGB(256, 256, 256)
-link.TextSize = 11.000
-link.TextWrapped = true
-------------------
-ImgPanelConfig.Name = "ImgPanelConfig"
-ImgPanelConfig.Parent = PanelHub
-ImgPanelConfig.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImgPanelConfig.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImgPanelConfig.BorderSizePixel = 0
-ImgPanelConfig.Position = UDim2.new(0.30005655, 0, 0.098863581, 0)
-ImgPanelConfig.Size = UDim2.new(0, 577, 0, 356)
-ImgPanelConfig.Visible = false
-ImgPanelConfig.Image = "rbxassetid://103448466726883"
-criarBotoesJanela(ImgPanelConfig, ImgPanelHub)
---------------------------------------------------------------------------------------------
+ButtonPrimario.Name = "ButtonPrimario"
+ButtonPrimario.Parent = PanelHub
+ButtonPrimario.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ButtonPrimario.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ButtonPrimario.BorderSizePixel = 0
+ButtonPrimario.Position = UDim2.new(0.108485416, 0, 0.282336861, 0)
+ButtonPrimario.Size = UDim2.new(0, 50, 0, 50)
+ButtonPrimario.Image = "rbxassetid://110436801700877"
 
-local AutoFarmAberto = false
-AutoFarmButton.Name = "AutoFarmButton"
-AutoFarmButton.Parent = ImgPanelConfig
-AutoFarmButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoFarmButton.BackgroundTransparency = 1.000
-AutoFarmButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoFarmButton.BorderSizePixel = 0
-AutoFarmButton.Position = UDim2.new(0.01, 0, 0.231638327, 0)
-AutoFarmButton.Size = UDim2.new(0, 131, 0, 56)
-AutoFarmButton.Image = "rbxassetid://98391899565092"
+UICorner.CornerRadius = UDim.new(0, 100)
+UICorner.Parent = ButtonPrimario
 
-AutoFarmButton.MouseButton1Click:Connect(function()
-	AutoFarmAberto = not AutoFarmAberto
+local aberto = false
 
-	PlayersAberto = false
-	ScrollPlayers.Visible = false
-	ScrollAutoFarm.Visible = AutoFarmAberto
+ButtonPrimario.MouseButton1Click:Connect(function()
+	aberto = not aberto
+
+	MainPanel.Visible = aberto
 end)
 
-local PlayersAberto = false
-PlayersButton.Name = "PlayersButton"
-PlayersButton.Parent = ImgPanelConfig
-PlayersButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayersButton.BackgroundTransparency = 1.000
-PlayersButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-PlayersButton.BorderSizePixel = 0
-PlayersButton.Position = UDim2.new(0.01, 0, 0.423728555, 0)
-PlayersButton.Size = UDim2.new(0, 131, 0, 56)
-PlayersButton.Image = "rbxassetid://80395360757767"
+Main.Name = "Main"
+Main.Parent = PanelHub
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.458894879, 0, 0.0718015656, 0)
+Main.Size = UDim2.new(0, 598, 0, 366)
 
+MainPanel.Name = "MainPanel"
+MainPanel.Parent = Main
+MainPanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainPanel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainPanel.BorderSizePixel = 0
+MainPanel.Position = UDim2.new(-0.0869565234, 0, -0.00273224036, 0)
+MainPanel.Size = UDim2.new(0, 598, 0, 366)
+MainPanel.Image = "rbxassetid://82549910179677"
+MainPanel.Visible = false
 
+config.Name = "config"
+config.Parent = MainPanel
+config.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+config.BorderColor3 = Color3.fromRGB(0, 0, 0)
+config.BorderSizePixel = 0
+config.Position = UDim2.new(0.366220742, 0, 0.734972656, 0)
+config.Size = UDim2.new(0, 144, 0, 68)
+config.Image = "rbxassetid://88136551028440"
 
+UICorner_2.Parent = config
 
+ss.Name = "ss"
+ss.Parent = config
+ss.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ss.BackgroundTransparency = 1.000
+ss.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ss.BorderSizePixel = 0
+ss.Position = UDim2.new(0.0700806528, 0, 0.386111081, 0)
+ss.Size = UDim2.new(0, 59, 0, 17)
+ss.Font = Enum.Font.LuckiestGuy
+ss.Text = "Config"
+ss.TextColor3 = Color3.fromRGB(255, 255, 255)
+ss.TextScaled = true
+ss.TextSize = 14.000
+ss.TextWrapped = true
 
-PlayersButton.MouseButton1Click:Connect(function()
-	PlayersAberto = not PlayersAberto
+aa.Name = "aa"
+aa.Parent = config
+aa.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aa.BackgroundTransparency = 1.000
+aa.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aa.BorderSizePixel = 0
+aa.Position = UDim2.new(0.376166463, 0, 0, 0)
+aa.Size = UDim2.new(0, 96, 0, 74)
+aa.Image = "rbxassetid://108244452479756"
 
-	AutoFarmAberto = false
-	ScrollAutoFarm.Visible = false
-	ScrollPlayers.Visible = PlayersAberto
+_1.Name = "1"
+_1.Parent = MainPanel
+_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1.BackgroundTransparency = 1.000
+_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1.BorderSizePixel = 0
+_1.Position = UDim2.new(0.0752508342, 0, 0.095628418, 0)
+_1.Size = UDim2.new(0, 120, 0, 38)
+_1.Font = Enum.Font.FredokaOne
+_1.Text = "Welcome to"
+_1.TextColor3 = Color3.fromRGB(231, 231, 231)
+_1.TextScaled = true
+_1.TextSize = 14.000
+_1.TextWrapped = true
+_2.Name = "2"
+_2.Parent = MainPanel
+_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2.BackgroundTransparency = 1.000
+_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_2.BorderSizePixel = 0
+_2.Position = UDim2.new(0.0752508342, 0, 0.174863383, 0)
+_2.Size = UDim2.new(0, 42, 0, 26)
+_2.Font = Enum.Font.FredokaOne
+_2.Text = "the"
+_2.TextColor3 = Color3.fromRGB(231, 231, 231)
+_2.TextScaled = true
+_2.TextSize = 14.000
+_2.TextWrapped = true
+_3.Name = "3"
+_3.Parent = MainPanel
+_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3.BackgroundTransparency = 1.000
+_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_3.BorderSizePixel = 0
+_3.Position = UDim2.new(0.168896317, 0, 0.169398904, 0)
+_3.Size = UDim2.new(0, 102, 0, 31)
+_3.Font = Enum.Font.FredokaOne
+_3.Text = "Free Plan   "
+_3.TextColor3 = Color3.fromRGB(78, 32, 231)
+_3.TextScaled = true
+_3.TextSize = 14.000
+_3.TextWrapped = true
+_4.Name = "4"
+_4.Parent = MainPanel
+_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_4.BackgroundTransparency = 1.000
+_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_4.BorderSizePixel = 0
+_4.Position = UDim2.new(0.0752508342, 0, 0.245901644, 0)
+_4.Size = UDim2.new(0, 141, 0, 28)
+_4.Font = Enum.Font.FredokaOne
+_4.Text = " of Lunx Hub"
+_4.TextColor3 = Color3.fromRGB(231, 231, 231)
+_4.TextScaled = true
+_4.TextSize = 14.000
+_4.TextWrapped = true
+_5.Name = "5"
+_5.Parent = MainPanel
+_5.BackgroundColor3 = Color3.fromRGB(213, 213, 213)
+_5.BackgroundTransparency = 1.000
+_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_5.BorderSizePixel = 0
+_5.Position = UDim2.new(0.120401338, 0, 0.355191261, 0)
+_5.Size = UDim2.new(0, 252, 0, 28)
+_5.Font = Enum.Font.FredokaOne
+_5.Text = "Enjoy the available scripts and features."
+_5.TextColor3 = Color3.fromRGB(202, 202, 202)
+_5.TextScaled = true
+_5.TextSize = 14.000
+_5.TextWrapped = true
+_6.Name = "6"
+_6.Parent = MainPanel
+_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_6.BackgroundTransparency = 1.000
+_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_6.BorderSizePixel = 0
+_6.Position = UDim2.new(0.103678927, 0, 0.431694001, 0)
+_6.Size = UDim2.new(0, 262, 0, 28)
+_6.Font = Enum.Font.FredokaOne
+_6.Text = "Stay tuned for updates and new content. and new content."
+_6.TextColor3 = Color3.fromRGB(202, 202, 202)
+_6.TextScaled = true
+_6.TextSize = 14.000
+_6.TextWrapped = true
+_7.Name = "7"
+_7.Parent = MainPanel
+_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_7.BackgroundTransparency = 1.000
+_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_7.BorderSizePixel = 0
+_7.Position = UDim2.new(0.100334451, 0, 0.508196712, 0)
+_7.Size = UDim2.new(0, 126, 0, 28)
+_7.Font = Enum.Font.FredokaOne
+_7.Text = "Join our Discord:"
+_7.TextColor3 = Color3.fromRGB(231, 231, 231)
+_7.TextScaled = true
+_7.TextSize = 14.000
+_7.TextWrapped = true
+_8.Name = "8"
+_8.Parent = MainPanel
+_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_8.BackgroundTransparency = 1.000
+_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_8.BorderSizePixel = 0
+_8.Position = UDim2.new(0.145484954, 0, 0.57650274, 0)
+_8.Size = UDim2.new(0, 17, 0, 15)
+_8.Font = Enum.Font.FredokaOne
+_8.Text = "• "
+_8.TextColor3 = Color3.fromRGB(231, 231, 231)
+_8.TextScaled = true
+_8.TextSize = 14.000
+_8.TextWrapped = true
+_9.Name = "9"
+_9.Parent = MainPanel
+_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_9.BackgroundTransparency = 1.000
+_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_9.BorderSizePixel = 0
+_9.Position = UDim2.new(0.168896317, 0, 0.568306029, 0)
+_9.Size = UDim2.new(0, 170, 0, 22)
+_9.Font = Enum.Font.FredokaOne
+_9.Text = "https://discord.gg/CYFpU79jYa"
+_9.TextColor3 = Color3.fromRGB(97, 100, 255)
+_9.TextScaled = true
+_9.TextSize = 14.000
+_9.TextWrapped = true
+
+closePanel.Name = "closePanel"
+closePanel.Parent = MainPanel
+closePanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closePanel.BackgroundTransparency = 1.000
+closePanel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closePanel.BorderSizePixel = 0
+closePanel.Position = UDim2.new(0.957030058, 0, -0.0058308905, 0)
+closePanel.Size = UDim2.new(0, 25, 0, 25)
+closePanel.Font = Enum.Font.SourceSansBold
+closePanel.Text = "x"
+closePanel.TextColor3 = Color3.fromRGB(255, 255, 255)
+closePanel.TextScaled = true
+closePanel.TextSize = 14.000
+closePanel.TextWrapped = true
+
+config.MouseButton1Click:Connect(function()
+	ConfiPanel.Visible = true
+	MainPanel.Visible = false
+end)
+closePanel.MouseButton1Click:Connect(function()
+	MainPanel.Visible = false
 end)
 
---------------------------------------------------------------------------------------------
-ScrollAutoFarm.Name = "ScrollAutoFarm"
-ScrollAutoFarm.Parent = ImgPanelConfig
-ScrollAutoFarm.Active = true
-ScrollAutoFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollAutoFarm.BackgroundTransparency = 1.000
-ScrollAutoFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollAutoFarm.BorderSizePixel = 0
-ScrollAutoFarm.Position = UDim2.new(0.253571621, 0, 0.165593176, 0)
-ScrollAutoFarm.Size = UDim2.new(0, 408, 0, 300)
-ScrollAutoFarm.Visible = false
-ScrollAutoFarm.ScrollBarThickness = 9
---------------------------------------------------------------------------------------------
-AutoCollectButton.Name = "AutoCollectButton"
-AutoCollectButton.Parent = ScrollAutoFarm
-AutoCollectButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoCollectButton.BackgroundTransparency = 1.000
-AutoCollectButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoCollectButton.BorderSizePixel = 0
-AutoCollectButton.Position = UDim2.new(0.095588237, 0, 0.0282685876, 0)
-AutoCollectButton.Size = UDim2.new(0, 327, 0, 51)
-AutoCollectButton.Image = "rbxassetid://108930673431145"
 
-AutoCollectText.Name = "AutoCollectText"
-AutoCollectText.Parent = AutoCollectButton
-AutoCollectText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoCollectText.BackgroundTransparency = 1.000
-AutoCollectText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoCollectText.BorderSizePixel = 0
-AutoCollectText.Position = UDim2.new(0.0581039769, 0, 0, 0)
-AutoCollectText.Size = UDim2.new(0, 155, 0, 50)
-AutoCollectText.Font = Enum.Font.DenkOne
-AutoCollectText.Text = "Auto Collect Coin"
-AutoCollectText.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoCollectText.TextSize = 22.000
+ConfiPanel.Name = "ConfiPanel"
+ConfiPanel.Parent = Main
+ConfiPanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ConfiPanel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ConfiPanel.BorderSizePixel = 0
+ConfiPanel.Position = UDim2.new(-0.0919732451, 0, 0, 0)
+ConfiPanel.Size = UDim2.new(0, 601, 0, 364)
+ConfiPanel.Visible = false
+ConfiPanel.Image = "rbxassetid://103448466726883"
 
-AutoCollect.Name = "☐AutoCollect"
-AutoCollect.Parent = AutoCollectButton
-AutoCollect.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoCollect.BackgroundTransparency = 1.000
-AutoCollect.BorderColor3 = Color3.fromRGB(19, 11, 126)
-AutoCollect.BorderSizePixel = 0
-AutoCollect.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-AutoCollect.Size = UDim2.new(0, 31, 0, 29)
-AutoCollect.Font = Enum.Font.SourceSans
-AutoCollect.Text = "☐"
-AutoCollect.TextColor3 = Color3.fromRGB(20, 20, 172)
-AutoCollect.TextSize = 63
+FrameMainFarm.Name = "FrameMainFarm"
+FrameMainFarm.Parent = ConfiPanel
+FrameMainFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameMainFarm.BackgroundTransparency = 1.000
+FrameMainFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameMainFarm.BorderSizePixel = 0
+FrameMainFarm.Position = UDim2.new(0.257903486, 0, 0.200549453, 0)
+FrameMainFarm.Size = UDim2.new(0, 435, 0, 294)
+
+MainConfig.Name = "MainConfig"
+MainConfig.Parent = FrameMainFarm
+MainConfig.Active = true
+MainConfig.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainConfig.BackgroundTransparency = 1.000
+MainConfig.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainConfig.BorderSizePixel = 0
+MainConfig.Size = UDim2.new(0, 435, 0, 291)
+MainConfig.CanvasSize = UDim2.new(0, 0, 3, 0)
+MainConfig.ScrollBarThickness = 9
+
+farm.Name = "farm"
+farm.Parent = MainConfig
+farm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+farm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+farm.BorderSizePixel = 0
+farm.Position = UDim2.new(-0.0229885057, 0, 0, 0)
+farm.Size = UDim2.new(0, 439, 0, 32)
+
+q13.Name = "q13"
+q13.Parent = farm
+q13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+q13.BackgroundTransparency = 1.000
+q13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+q13.BorderSizePixel = 0
+q13.Position = UDim2.new(0.0756501183, 0, 0.09375, 0)
+q13.Size = UDim2.new(0, 59, 0, 26)
+q13.Font = Enum.Font.Arial
+q13.Text = "Farm"
+q13.TextColor3 = Color3.fromRGB(218, 218, 218)
+q13.TextScaled = true
+q13.TextSize = 14.000
+q13.TextWrapped = true
+-----------------------------------------------------------------------------------
+AutoCollectIMG.Name = "AutoCollectIMG"
+AutoCollectIMG.Parent = MainConfig
+AutoCollectIMG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoCollectIMG.BackgroundTransparency = 1.000
+AutoCollectIMG.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoCollectIMG.BorderSizePixel = 0
+AutoCollectIMG.Position = UDim2.new(0.00459770113, 0, 0.0481859408, 0)
+AutoCollectIMG.Size = UDim2.new(0, 407, 0, 58)
+AutoCollectIMG.Image = "rbxassetid://103863495321859"
+
+TextoCollect.Name = "TextoCollect"
+TextoCollect.Parent = AutoCollectIMG
+TextoCollect.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoCollect.BackgroundTransparency = 1.000
+TextoCollect.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoCollect.BorderSizePixel = 0
+TextoCollect.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoCollect.Size = UDim2.new(0, 220, 0, 32)
+TextoCollect.Font = Enum.Font.Arial
+TextoCollect.Text = "Auto Collect Money"
+TextoCollect.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoCollect.TextSize = 17.000
+TextoCollect.TextWrapped = true
+TextoCollect.TextXAlignment = Enum.TextXAlignment.Left
+
+CollectButton.Name = "CollectButton"
+CollectButton.Parent = AutoCollectIMG
+CollectButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CollectButton.BackgroundTransparency = 1.000
+CollectButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CollectButton.BorderSizePixel = 0
+CollectButton.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+CollectButton.Size = UDim2.new(0, 36, 0, 33)
+CollectButton.Font = Enum.Font.SourceSansBold
+CollectButton.Text = "☐"
+CollectButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+CollectButton.TextSize = 55.000
 
 local ativo1 = false
 
--- BOTÃO
-AutoCollect.MouseButton1Click:Connect(function()
+CollectButton.MouseButton1Click:Connect(function()
 	ativo1 = not ativo1
 
 	if ativo1 then
-		AutoCollect.Text = "▣"
+		CollectButton.Text = "▣"
 	else
-		AutoCollect.Text = "☐"
+		CollectButton.Text = "☐"
 	end
 end)
 
-local player = game.Players.LocalPlayer
 local hrp
 
 local function atualizarChar(char)
@@ -500,580 +524,401 @@ task.spawn(function()
 		end
 	end
 end)
---------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+local function fecharTodos()
+	SelectBuy_2.Visible = false
+	SelectSell_2.Visible = false
+	IngredientsBuys.Visible = false
+end
 
---------------------------------------------------------------------------------------------
+SelectBuy.Name = "SelectBuy"
+SelectBuy.Parent = MainConfig
+SelectBuy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SelectBuy.BackgroundTransparency = 1.000
+SelectBuy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SelectBuy.BorderSizePixel = 0
+SelectBuy.Position = UDim2.new(0.00499999989, 0, 0.129999995, 0)
+SelectBuy.Size = UDim2.new(0, 407, 0, 58)
+SelectBuy.Image = "rbxassetid://103863495321859"
 
-AutoSellButton_3.Name = "AutoBuyButton"
-AutoSellButton_3.Parent = ScrollAutoFarm
-AutoSellButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoSellButton_3.BackgroundTransparency = 1.000
-AutoSellButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoSellButton_3.BorderSizePixel = 0
-AutoSellButton_3.Position = UDim2.new(0.095588237, 0, 0.210651975, 0)
-AutoSellButton_3.Size = UDim2.new(0, 327, 0, 51)
-AutoSellButton_3.Image = "rbxassetid://108930673431145"
+TextoCollect_2.Name = "TextoCollect"
+TextoCollect_2.Parent = SelectBuy
+TextoCollect_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoCollect_2.BackgroundTransparency = 1.000
+TextoCollect_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoCollect_2.BorderSizePixel = 0
+TextoCollect_2.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoCollect_2.Size = UDim2.new(0, 220, 0, 32)
+TextoCollect_2.Font = Enum.Font.Arial
+TextoCollect_2.Text = "Select Brainrot Buy "
+TextoCollect_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoCollect_2.TextSize = 17.000
+TextoCollect_2.TextWrapped = true
+TextoCollect_2.TextXAlignment = Enum.TextXAlignment.Left
 
-AutoSellText.Name = "AutoSellText"
-AutoSellText.Parent = AutoSellButton_3
-AutoSellText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoSellText.BackgroundTransparency = 1.000
-AutoSellText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoSellText.BorderSizePixel = 0
-AutoSellText.Position = UDim2.new(0.0581039769, 0, 0, 0)
-AutoSellText.Size = UDim2.new(0, 86, 0, 50)
-AutoSellText.Font = Enum.Font.DenkOne
-AutoSellText.Text = "Auto Sell"
-AutoSellText.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoSellText.TextSize = 22.000
+Caixa1.Name = "Caixa1"
+Caixa1.Parent = SelectBuy
+Caixa1.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+Caixa1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Caixa1.BorderSizePixel = 0
+Caixa1.Position = UDim2.new(0.712530732, 0, 0.120689653, 0)
+Caixa1.Size = UDim2.new(0, 109, 0, 43)
+Caixa1.Text = ""
 
-AutoSellButton.Name = "AutoSellButton"
-AutoSellButton.Parent = AutoSellButton_3
-AutoSellButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoSellButton.BackgroundTransparency = 1.000
-AutoSellButton.BorderColor3 = Color3.fromRGB(13, 36, 126)
-AutoSellButton.BorderSizePixel = 0
-AutoSellButton.Position = UDim2.new(0.696189608, 0, 0.156862751, 0)
-AutoSellButton.Size = UDim2.new(0, 83, 0, 35)
-AutoSellButton.Image = "rbxassetid://128910264089028"
+Caixa1.MouseButton1Click:Connect(function()
+	local estado = not SelectBuy_2.Visible
+	fecharTodos()
+	SelectBuy_2.Visible = estado
+end)
 
+UICorner_3.Parent = Caixa1
 
-FrameBrainrotSell.Name = "FrameBrainrotSell"
-FrameBrainrotSell.Parent = AutoSellButton_3
-FrameBrainrotSell.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-FrameBrainrotSell.BorderColor3 = Color3.fromRGB(8, 9, 121)
-FrameBrainrotSell.BorderSizePixel = 0
-FrameBrainrotSell.LayoutOrder = -1
-FrameBrainrotSell.Position = UDim2.new(-0.0689296652, 0, 1.07863137, 0)
-FrameBrainrotSell.Size = UDim2.new(0, 359, 0, 601)
-FrameBrainrotSell.Visible = false
+_1_2.Name = "--1"
+_1_2.Parent = Caixa1
+_1_2.BackgroundColor3 = Color3.fromRGB(208, 208, 208)
+_1_2.BackgroundTransparency = 1.000
+_1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1_2.BorderSizePixel = 0
+_1_2.Position = UDim2.new(0.0733944923, 0, 0.302325577, 0)
+_1_2.Size = UDim2.new(0, 69, 0, 26)
+_1_2.Font = Enum.Font.DenkOne
+_1_2.Text = "--"
+_1_2.TextColor3 = Color3.fromRGB(208, 208, 208)
+_1_2.TextSize = 25.000
+_1_2.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_2.Parent = FrameBrainrotSell
+_1_3.Name = "<1"
+_1_3.Parent = Caixa1
+_1_3.BackgroundColor3 = Color3.fromRGB(208, 208, 208)
+_1_3.BackgroundTransparency = 1.000
+_1_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1_3.BorderSizePixel = 0
+_1_3.Position = UDim2.new(0.733944952, 0, 0.232558146, 0)
+_1_3.Rotation = 90.000
+_1_3.Size = UDim2.new(0, 22, 0, 23)
+_1_3.Font = Enum.Font.DenkOne
+_1_3.Text = "< >"
+_1_3.TextColor3 = Color3.fromRGB(208, 208, 208)
+_1_3.TextSize = 22.000
 
-CommonBrainrotS.Name = "CommonBrainrotS"
-CommonBrainrotS.Parent = FrameBrainrotSell
-CommonBrainrotS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CommonBrainrotS.BackgroundTransparency = 1.000
-CommonBrainrotS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CommonBrainrotS.BorderSizePixel = 0
-CommonBrainrotS.Position = UDim2.new(0.0976930376, 0, 0.0311553273, 0)
-CommonBrainrotS.Size = UDim2.new(0, 291, 0, 66)
-CommonBrainrotS.Image = "rbxassetid://108930673431145"
+-----------------------------------------------------------------------------------
+SelectSell.Name = "SelectSell"
+SelectSell.Parent = MainConfig
+SelectSell.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SelectSell.BackgroundTransparency = 1.000
+SelectSell.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SelectSell.BorderSizePixel = 0
+SelectSell.Position = UDim2.new(0.00459770113, 0, 0.207482994, 0)
+SelectSell.Size = UDim2.new(0, 407, 0, 58)
+SelectSell.Image = "rbxassetid://103863495321859"
 
-CommonTextS.Name = "CommonTextS"
-CommonTextS.Parent = CommonBrainrotS
-CommonTextS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CommonTextS.BackgroundTransparency = 1.000
-CommonTextS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CommonTextS.BorderSizePixel = 0
-CommonTextS.Size = UDim2.new(0, 166, 0, 66)
-CommonTextS.Font = Enum.Font.DenkOne
-CommonTextS.Text = "Brainrot Common"
-CommonTextS.TextColor3 = Color3.fromRGB(255, 255, 255)
-CommonTextS.TextSize = 18.000
+TextoCollect_3.Name = "TextoCollect"
+TextoCollect_3.Parent = SelectSell
+TextoCollect_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoCollect_3.BackgroundTransparency = 1.000
+TextoCollect_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoCollect_3.BorderSizePixel = 0
+TextoCollect_3.Position = UDim2.new(0.0687960684, 0, 0.22441417, 0)
+TextoCollect_3.Size = UDim2.new(0, 234, 0, 32)
+TextoCollect_3.Font = Enum.Font.Arial
+TextoCollect_3.Text = "Select Brainrot Sell "
+TextoCollect_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoCollect_3.TextSize = 17.000
+TextoCollect_3.TextWrapped = true
+TextoCollect_3.TextXAlignment = Enum.TextXAlignment.Left
 
-commonS.Name = "☐commonS"
-commonS.Parent = CommonBrainrotS
-commonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-commonS.BackgroundTransparency = 1.000
-commonS.BorderColor3 = Color3.fromRGB(19, 11, 126)
-commonS.BorderSizePixel = 0
-commonS.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-commonS.Size = UDim2.new(0, 31, 0, 29)
-commonS.Font = Enum.Font.SourceSans
-commonS.Text = "☐"
-commonS.TextColor3 = Color3.fromRGB(20, 20, 172)
-commonS.TextSize = 63.000
+caixa2.Name = "caixa2"
+caixa2.Parent = SelectSell
+caixa2.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+caixa2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+caixa2.BorderSizePixel = 0
+caixa2.Position = UDim2.new(0.712530732, 0, 0.120689653, 0)
+caixa2.Size = UDim2.new(0, 109, 0, 43)
+caixa2.Text = ""
 
-UncommonBrainrotS.Name = "UncommonBrainrotS"
-UncommonBrainrotS.Parent = FrameBrainrotSell
-UncommonBrainrotS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UncommonBrainrotS.BackgroundTransparency = 1.000
-UncommonBrainrotS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-UncommonBrainrotS.BorderSizePixel = 0
-UncommonBrainrotS.Position = UDim2.new(0.0967075188, 0, 0.173299968, 0)
-UncommonBrainrotS.Size = UDim2.new(0, 291, 0, 66)
-UncommonBrainrotS.Image = "rbxassetid://108930673431145"
+caixa2.MouseButton1Click:Connect(function()
+	local estado = not SelectSell_2.Visible
+	fecharTodos()
+	SelectSell_2.Visible = estado
+end)
 
-uncommonS.Name = "☐uncommonS"
-uncommonS.Parent = UncommonBrainrotS
-uncommonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-uncommonS.BackgroundTransparency = 1.000
-uncommonS.BorderColor3 = Color3.fromRGB(19, 11, 126)
-uncommonS.BorderSizePixel = 0
-uncommonS.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-uncommonS.Size = UDim2.new(0, 31, 0, 29)
-uncommonS.Font = Enum.Font.SourceSans
-uncommonS.Text = "☐"
-uncommonS.TextColor3 = Color3.fromRGB(20, 20, 172)
-uncommonS.TextSize = 63.000
+UICorner_4.Parent = caixa2
 
-UncommonTextS.Name = "UncommonTextS"
-UncommonTextS.Parent = UncommonBrainrotS
-UncommonTextS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UncommonTextS.BackgroundTransparency = 1.000
-UncommonTextS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-UncommonTextS.BorderSizePixel = 0
-UncommonTextS.Size = UDim2.new(0, 166, 0, 66)
-UncommonTextS.Font = Enum.Font.DenkOne
-UncommonTextS.Text = "Brainrot Uncommon"
-UncommonTextS.TextColor3 = Color3.fromRGB(255, 255, 255)
-UncommonTextS.TextSize = 18.000
+_2_2.Name = "--2"
+_2_2.Parent = caixa2
+_2_2.BackgroundColor3 = Color3.fromRGB(208, 208, 208)
+_2_2.BackgroundTransparency = 1.000
+_2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_2_2.BorderSizePixel = 0
+_2_2.Position = UDim2.new(0.0733944923, 0, 0.302325577, 0)
+_2_2.Size = UDim2.new(0, 69, 0, 26)
+_2_2.Font = Enum.Font.DenkOne
+_2_2.Text = "--"
+_2_2.TextColor3 = Color3.fromRGB(208, 208, 208)
+_2_2.TextSize = 25.000
+_2_2.TextXAlignment = Enum.TextXAlignment.Left
 
-RareBrainrotS.Name = "RareBrainrotS"
-RareBrainrotS.Parent = FrameBrainrotSell
-RareBrainrotS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RareBrainrotS.BackgroundTransparency = 1.000
-RareBrainrotS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RareBrainrotS.BorderSizePixel = 0
-RareBrainrotS.Position = UDim2.new(0.0976930376, 0, 0.310657081, 0)
-RareBrainrotS.Size = UDim2.new(0, 291, 0, 66)
-RareBrainrotS.Image = "rbxassetid://108930673431145"
-
-RareS.Name = "☐RareS"
-RareS.Parent = RareBrainrotS
-RareS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RareS.BackgroundTransparency = 1.000
-RareS.BorderColor3 = Color3.fromRGB(19, 11, 126)
-RareS.BorderSizePixel = 0
-RareS.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-RareS.Size = UDim2.new(0, 31, 0, 29)
-RareS.Font = Enum.Font.SourceSans
-RareS.Text = "☐"
-RareS.TextColor3 = Color3.fromRGB(20, 20, 172)
-RareS.TextSize = 63.000
-
-RareTextS.Name = "RareTextS"
-RareTextS.Parent = RareBrainrotS
-RareTextS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RareTextS.BackgroundTransparency = 1.000
-RareTextS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RareTextS.BorderSizePixel = 0
-RareTextS.Size = UDim2.new(0, 166, 0, 66)
-RareTextS.Font = Enum.Font.DenkOne
-RareTextS.Text = "Brainrot Rare"
-RareTextS.TextColor3 = Color3.fromRGB(255, 255, 255)
-RareTextS.TextSize = 18.000
-
-EpicBrainrotS.Name = "EpicBrainrotS"
-EpicBrainrotS.Parent = FrameBrainrotSell
-EpicBrainrotS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EpicBrainrotS.BackgroundTransparency = 1.000
-EpicBrainrotS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EpicBrainrotS.BorderSizePixel = 0
-EpicBrainrotS.Position = UDim2.new(0.0967075188, 0, 0.652601701, 0)
-EpicBrainrotS.Size = UDim2.new(0, 291, 0, 66)
-EpicBrainrotS.Image = "rbxassetid://108930673431145"
-
-EpicS.Name = "☐EpicS"
-EpicS.Parent = EpicBrainrotS
-EpicS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EpicS.BackgroundTransparency = 1.000
-EpicS.BorderColor3 = Color3.fromRGB(19, 11, 126)
-EpicS.BorderSizePixel = 0
-EpicS.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-EpicS.Size = UDim2.new(0, 31, 0, 29)
-EpicS.Font = Enum.Font.SourceSans
-EpicS.Text = "☐"
-EpicS.TextColor3 = Color3.fromRGB(20, 20, 172)
-EpicS.TextSize = 63.000
-
-EpicTextS.Name = "EpicTextS"
-EpicTextS.Parent = EpicBrainrotS
-EpicTextS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EpicTextS.BackgroundTransparency = 1.000
-EpicTextS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EpicTextS.BorderSizePixel = 0
-EpicTextS.Size = UDim2.new(0, 166, 0, 66)
-EpicTextS.Font = Enum.Font.DenkOne
-EpicTextS.Text = "Brainrot Epic"
-EpicTextS.TextColor3 = Color3.fromRGB(255, 255, 255)
-EpicTextS.TextSize = 18.000
-
-LegendaryBrainrotS.Name = "LegendaryBrainrotS"
-LegendaryBrainrotS.Parent = FrameBrainrotSell
-LegendaryBrainrotS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LegendaryBrainrotS.BackgroundTransparency = 1.000
-LegendaryBrainrotS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LegendaryBrainrotS.BorderSizePixel = 0
-LegendaryBrainrotS.Position = UDim2.new(0.0967075188, 0, 0.59726009, 0)
-LegendaryBrainrotS.Size = UDim2.new(0, 291, 0, 66)
-LegendaryBrainrotS.Image = "rbxassetid://108930673431145"
-
-LegendaryS.Name = "☐LegendaryS"
-LegendaryS.Parent = LegendaryBrainrotS
-LegendaryS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LegendaryS.BackgroundTransparency = 1.000
-LegendaryS.BorderColor3 = Color3.fromRGB(19, 11, 126)
-LegendaryS.BorderSizePixel = 0
-LegendaryS.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-LegendaryS.Size = UDim2.new(0, 31, 0, 29)
-LegendaryS.Font = Enum.Font.SourceSans
-LegendaryS.Text = "☐"
-LegendaryS.TextColor3 = Color3.fromRGB(20, 20, 172)
-LegendaryS.TextSize = 63.000
-
-LegendaryTextS.Name = "LegendaryTextS"
-LegendaryTextS.Parent = LegendaryBrainrotS
-LegendaryTextS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LegendaryTextS.BackgroundTransparency = 1.000
-LegendaryTextS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LegendaryTextS.BorderSizePixel = 0
-LegendaryTextS.Size = UDim2.new(0, 166, 0, 66)
-LegendaryTextS.Font = Enum.Font.DenkOne
-LegendaryTextS.Text = "Brainrot Legendary"
-LegendaryTextS.TextColor3 = Color3.fromRGB(255, 255, 255)
-LegendaryTextS.TextSize = 18.000
-
-MythicBrainrotS.Name = "MythicBrainrotS"
-MythicBrainrotS.Parent = FrameBrainrotSell
-MythicBrainrotS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MythicBrainrotS.BackgroundTransparency = 1.000
-MythicBrainrotS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MythicBrainrotS.BorderSizePixel = 0
-MythicBrainrotS.Position = UDim2.new(0.0967075188, 0, 0.729609695, 0)
-MythicBrainrotS.Size = UDim2.new(0, 291, 0, 66)
-MythicBrainrotS.Image = "rbxassetid://108930673431145"
-
-MythicS.Name = "☐MythicS"
-MythicS.Parent = MythicBrainrotS
-MythicS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MythicS.BackgroundTransparency = 1.000
-MythicS.BorderColor3 = Color3.fromRGB(19, 11, 126)
-MythicS.BorderSizePixel = 0
-MythicS.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-MythicS.Size = UDim2.new(0, 31, 0, 29)
-MythicS.Font = Enum.Font.SourceSans
-MythicS.Text = "☐"
-MythicS.TextColor3 = Color3.fromRGB(20, 20, 172)
-MythicS.TextSize = 63.000
-
-MythicTextS.Name = "MythicTextS"
-MythicTextS.Parent = MythicBrainrotS
-MythicTextS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MythicTextS.BackgroundTransparency = 1.000
-MythicTextS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MythicTextS.BorderSizePixel = 0
-MythicTextS.Size = UDim2.new(0, 166, 0, 66)
-MythicTextS.Font = Enum.Font.DenkOne
-MythicTextS.Text = "Brainrot Mythic"
-MythicTextS.TextColor3 = Color3.fromRGB(255, 255, 255)
-MythicTextS.TextSize = 18.000
-
-SecretBrainrotS.Name = "SecretBrainrotS"
-SecretBrainrotS.Parent = FrameBrainrotSell
-SecretBrainrotS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SecretBrainrotS.BackgroundTransparency = 1.000
-SecretBrainrotS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SecretBrainrotS.BorderSizePixel = 0
-SecretBrainrotS.Position = UDim2.new(0.0976930376, 0, 0.866566777, 0)
-SecretBrainrotS.Size = UDim2.new(0, 291, 0, 66)
-SecretBrainrotS.Image = "rbxassetid://108930673431145"
-
-SecretS.Name = "☐SecretS"
-SecretS.Parent = SecretBrainrotS
-SecretS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SecretS.BackgroundTransparency = 1.000
-SecretS.BorderColor3 = Color3.fromRGB(19, 11, 126)
-SecretS.BorderSizePixel = 0
-SecretS.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-SecretS.Size = UDim2.new(0, 31, 0, 29)
-SecretS.Font = Enum.Font.SourceSans
-SecretS.Text = "☐"
-SecretS.TextColor3 = Color3.fromRGB(20, 20, 172)
-SecretS.TextSize = 63.000
-
-SecretTextS.Name = "SecretTextS"
-SecretTextS.Parent = SecretBrainrotS
-SecretTextS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SecretTextS.BackgroundTransparency = 1.000
-SecretTextS.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SecretTextS.BorderSizePixel = 0
-SecretTextS.Size = UDim2.new(0, 166, 0, 66)
-SecretTextS.Font = Enum.Font.DenkOne
-SecretTextS.Text = "Brainrot Secret"
-SecretTextS.TextColor3 = Color3.fromRGB(255, 255, 255)
-SecretTextS.TextSize = 18.000
-------------------------------------------------------------------------------
-AutoIngredientsButton.Name = "AutoIngredientsButton"
-AutoIngredientsButton.Parent = ScrollAutoFarm
-AutoIngredientsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoIngredientsButton.BackgroundTransparency = 1.000
-AutoIngredientsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoIngredientsButton.BorderSizePixel = 0
-AutoIngredientsButton.Position = UDim2.new(0.095588237, 0, 0.2998305, 0)
-AutoIngredientsButton.Size = UDim2.new(0, 327, 0, 51)
-AutoIngredientsButton.Image = "rbxassetid://108930673431145"
-
-AutoIngredientsText.Name = "AutoIngredientsText"
-AutoIngredientsText.Parent = AutoIngredientsButton
-AutoIngredientsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoIngredientsText.BackgroundTransparency = 1.000
-AutoIngredientsText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoIngredientsText.BorderSizePixel = 0
-AutoIngredientsText.Position = UDim2.new(0.0881039769, 0, 0, 0)
-AutoIngredientsText.Size = UDim2.new(0, 100, 0, 50)
-AutoIngredientsText.Font = Enum.Font.DenkOne
-AutoIngredientsText.Text = "Auto ingredients"
-AutoIngredientsText.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoIngredientsText.TextSize = 22.000
-
-AutoIngredients.Name = "☐Autoingredients"
-AutoIngredients.Parent = AutoIngredientsButton
+_2_3.Name = "<2"
+_2_3.Parent = caixa2
+_2_3.BackgroundColor3 = Color3.fromRGB(208, 208, 208)
+_2_3.BackgroundTransparency = 1.000
+_2_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_2_3.BorderSizePixel = 0
+_2_3.Position = UDim2.new(0.733944952, 0, 0.232558146, 0)
+_2_3.Rotation = 90.000
+_2_3.Size = UDim2.new(0, 22, 0, 23)
+_2_3.Font = Enum.Font.DenkOne
+_2_3.Text = "< >"
+_2_3.TextColor3 = Color3.fromRGB(208, 208, 208)
+_2_3.TextSize = 22.000
+-----------------------------------------------------------------------------------
+AutoIngredients.Name = "AutoIngredients"
+AutoIngredients.Parent = MainConfig
 AutoIngredients.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AutoIngredients.BackgroundTransparency = 1.000
-AutoIngredients.BorderColor3 = Color3.fromRGB(19, 11, 126)
+AutoIngredients.BorderColor3 = Color3.fromRGB(0, 0, 0)
 AutoIngredients.BorderSizePixel = 0
-AutoIngredients.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-AutoIngredients.Size = UDim2.new(0, 31, 0, 29)
-AutoIngredients.Font = Enum.Font.SourceSans
-AutoIngredients.Text = "☐"
-AutoIngredients.TextColor3 = Color3.fromRGB(20, 20, 172)
-AutoIngredients.TextSize = 63.000
+AutoIngredients.Position = UDim2.new(0.00459770113, 0, 0.288548768, 0)
+AutoIngredients.Size = UDim2.new(0, 407, 0, 58)
+AutoIngredients.Image = "rbxassetid://103863495321859"
 
-local AutoAtivo = false
+TextoIngredients.Name = "TextoIngredients"
+TextoIngredients.Parent = AutoIngredients
+TextoIngredients.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoIngredients.BackgroundTransparency = 1.000
+TextoIngredients.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoIngredients.BorderSizePixel = 0
+TextoIngredients.Position = UDim2.new(0.0687960684, 0, 0.22441417, 0)
+TextoIngredients.Size = UDim2.new(0, 206, 0, 32)
+TextoIngredients.Font = Enum.Font.Arial
+TextoIngredients.Text = "Buy Ingredients"
+TextoIngredients.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoIngredients.TextSize = 17.000
+TextoIngredients.TextWrapped = true
+TextoIngredients.TextXAlignment = Enum.TextXAlignment.Left
 
-local itens = {
-	"Victrola",
-	"IceEmblem",
-	"Star",
-	"Flower",
-	"Phone",
-	"Taco",
-	"Lighter"
-}
+caixa3.Name = "caixa3"
+caixa3.Parent = AutoIngredients
+caixa3.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+caixa3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+caixa3.BorderSizePixel = 0
+caixa3.Position = UDim2.new(0.712530732, 0, 0.120689653, 0)
+caixa3.Size = UDim2.new(0, 109, 0, 43)
+caixa3.Text = ""
 
-local remote = game.ReplicatedStorage:FindFirstChild("Remote") -- não trava
-
-AutoIngredients.MouseButton1Click:Connect(function()
-	AutoAtivo = not AutoAtivo
-
-	AutoIngredients.Text = AutoAtivo and "▣" or "☐"
+caixa3.MouseButton1Click:Connect(function()
+	local estado = not IngredientsBuys.Visible
+	fecharTodos()
+	IngredientsBuys.Visible = estado
 end)
 
-task.spawn(function()
-	while task.wait(1) do
-		if AutoAtivo and remote then
-			for _, item in pairs(itens) do
-				pcall(function()
-					remote:FireServer("General", "Ingredients", "Purchase", item)
-				end)
-				task.wait(0.2)
-			end
-		end
+UICorner_5.Parent = caixa3
+
+_3_2.Name = "--3"
+_3_2.Parent = caixa3
+_3_2.BackgroundColor3 = Color3.fromRGB(208, 208, 208)
+_3_2.BackgroundTransparency = 1.000
+_3_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_3_2.BorderSizePixel = 0
+_3_2.Position = UDim2.new(0.0733944923, 0, 0.302325577, 0)
+_3_2.Size = UDim2.new(0, 69, 0, 26)
+_3_2.Font = Enum.Font.DenkOne
+_3_2.Text = "--"
+_3_2.TextColor3 = Color3.fromRGB(208, 208, 208)
+_3_2.TextSize = 25.000
+_3_2.TextXAlignment = Enum.TextXAlignment.Left
+
+_3_3.Name = "<3"
+_3_3.Parent = caixa3
+_3_3.BackgroundColor3 = Color3.fromRGB(208, 208, 208)
+_3_3.BackgroundTransparency = 1.000
+_3_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_3_3.BorderSizePixel = 0
+_3_3.Position = UDim2.new(0.733944952, 0, 0.232558146, 0)
+_3_3.Rotation = 90.000
+_3_3.Size = UDim2.new(0, 22, 0, 23)
+_3_3.Font = Enum.Font.DenkOne
+_3_3.Text = "< >"
+_3_3.TextColor3 = Color3.fromRGB(208, 208, 208)
+_3_3.TextSize = 22.000
+-----------------------------------------------------------------------------------
+Rebirth.Name = "Rebirth"
+Rebirth.Parent = MainConfig
+Rebirth.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rebirth.BackgroundTransparency = 1.000
+Rebirth.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rebirth.BorderSizePixel = 0
+Rebirth.Position = UDim2.new(0.00459770113, 0, 0.370181382, 0)
+Rebirth.Size = UDim2.new(0, 407, 0, 58)
+Rebirth.Image = "rbxassetid://103863495321859"
+
+TextoRebirth.Name = "TextoRebirth"
+TextoRebirth.Parent = Rebirth
+TextoRebirth.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoRebirth.BackgroundTransparency = 1.000
+TextoRebirth.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoRebirth.BorderSizePixel = 0
+TextoRebirth.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoRebirth.Size = UDim2.new(0, 220, 0, 32)
+TextoRebirth.Font = Enum.Font.Arial
+TextoRebirth.Text = "Auto Rebirth"
+TextoRebirth.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoRebirth.TextSize = 17.000
+TextoRebirth.TextWrapped = true
+TextoRebirth.TextXAlignment = Enum.TextXAlignment.Left
+
+RebirthButton.Name = "RebirthButton"
+RebirthButton.Parent = Rebirth
+RebirthButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RebirthButton.BackgroundTransparency = 1.000
+RebirthButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RebirthButton.BorderSizePixel = 0
+RebirthButton.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+RebirthButton.Size = UDim2.new(0, 36, 0, 33)
+RebirthButton.Font = Enum.Font.SourceSansBold
+RebirthButton.Text = "☐"
+RebirthButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+RebirthButton.TextSize = 55.000
+
+-----------------------------------------------------------------------------------
+players.Name = "players"
+players.Parent = MainConfig
+players.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+players.BorderColor3 = Color3.fromRGB(0, 0, 0)
+players.BorderSizePixel = 0
+players.Position = UDim2.new(-0.023, 0, 0.5, 0)
+players.Size = UDim2.new(0, 439, 0, 32)
+
+q14.Name = "q14"
+q14.Parent = players
+q14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+q14.BackgroundTransparency = 1.000
+q14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+q14.BorderSizePixel = 0
+q14.Position = UDim2.new(0.080205895, 0, 0.09375, 0)
+q14.Size = UDim2.new(0, 72, 0, 26)
+q14.Font = Enum.Font.Arial
+q14.Text = "Players"
+q14.TextColor3 = Color3.fromRGB(218, 218, 218)
+q14.TextScaled = true
+q14.TextSize = 14.000
+q14.TextWrapped = true
+-----------------------------------------------------------------------------------
+Speed.Name = "Speed"
+Speed.Parent = MainConfig
+Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BackgroundTransparency = 1.000
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.00499999989, 0, 0.660000026, 0)
+Speed.Size = UDim2.new(0, 407, 0, 58)
+Speed.Image = "rbxassetid://103863495321859"
+
+TextoSpeed.Name = "TextoSpeed"
+TextoSpeed.Parent = Speed
+TextoSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoSpeed.BackgroundTransparency = 1.000
+TextoSpeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoSpeed.BorderSizePixel = 0
+TextoSpeed.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoSpeed.Size = UDim2.new(0, 220, 0, 32)
+TextoSpeed.Font = Enum.Font.Arial
+TextoSpeed.Text = "Walk Speed"
+TextoSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoSpeed.TextSize = 17.000
+TextoSpeed.TextWrapped = true
+TextoSpeed.TextXAlignment = Enum.TextXAlignment.Left
+
+SpeedButton.Name = "SpeedButton"
+SpeedButton.Parent = Speed
+SpeedButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedButton.BackgroundTransparency = 1.000
+SpeedButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpeedButton.BorderSizePixel = 0
+SpeedButton.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+SpeedButton.Size = UDim2.new(0, 36, 0, 33)
+SpeedButton.Font = Enum.Font.SourceSansBold
+SpeedButton.Text = "☐"
+SpeedButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+SpeedButton.TextSize = 55.000
+
+local speedAtivo = false
+local velocidadeNormal = 20
+
+local function aplicarSpeed(char)
+	local humanoid = char:FindFirstChildOfClass("Humanoid")
+	if not humanoid then return end
+
+	if speedAtivo then
+		humanoid.WalkSpeed = velocidadeNormal * 3
+	else
+		humanoid.WalkSpeed = velocidadeNormal
 	end
-end)
-------------------------------------------------------------------------------------
-AutoRebirthButton.Name = "AutoRebirthButton"
-AutoRebirthButton.Parent = ScrollAutoFarm
-AutoRebirthButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoRebirthButton.BackgroundTransparency = 1.000
-AutoRebirthButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoRebirthButton.BorderSizePixel = 0
-AutoRebirthButton.Position = UDim2.new(0.095588237, 0, 0.3898305, 0)
-AutoRebirthButton.Size = UDim2.new(0, 327, 0, 51)
-AutoRebirthButton.Image = "rbxassetid://108930673431145"
+end
 
-AutoRebirthText.Name = "AutoRebirthText"
-AutoRebirthText.Parent = AutoRebirthButton
-AutoRebirthText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoRebirthText.BackgroundTransparency = 1.000
-AutoRebirthText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoRebirthText.BorderSizePixel = 0
-AutoRebirthText.Position = UDim2.new(0.0581039769, 0, 0, 0)
-AutoRebirthText.Size = UDim2.new(0, 100, 0, 50)
-AutoRebirthText.Font = Enum.Font.DenkOne
-AutoRebirthText.Text = "Auto Rebirth"
-AutoRebirthText.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoRebirthText.TextSize = 22.000
 
-AutoRebirth.Name = "☐AutoRebirth"
-AutoRebirth.Parent = AutoRebirthButton
-AutoRebirth.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoRebirth.BackgroundTransparency = 1.000
-AutoRebirth.BorderColor3 = Color3.fromRGB(19, 11, 126)
-AutoRebirth.BorderSizePixel = 0
-AutoRebirth.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-AutoRebirth.Size = UDim2.new(0, 31, 0, 29)
-AutoRebirth.Font = Enum.Font.SourceSans
-AutoRebirth.Text = "☐"
-AutoRebirth.TextColor3 = Color3.fromRGB(20, 20, 172)
-AutoRebirth.TextSize = 63.000
---------------------------------------------------------------------------------------------
-ScrollPlayers.Name = "ScrollPlayers"
-ScrollPlayers.Parent = ImgPanelConfig
-ScrollPlayers.Active = true
-ScrollPlayers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollPlayers.BackgroundTransparency = 1.000
-ScrollPlayers.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScrollPlayers.BorderSizePixel = 0
-ScrollPlayers.Position = UDim2.new(0.253571621, 0, 0.165593176, 0)
-ScrollPlayers.Size = UDim2.new(0, 408, 0, 300)
-ScrollPlayers.Visible = false
-ScrollPlayers.CanvasPosition = Vector2.new(0, 200)
-ScrollPlayers.ScrollBarThickness = 9
 
-EspPlayersButton.Name = "EspPlayersButton"
-EspPlayersButton.Parent = ScrollPlayers
-EspPlayersButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EspPlayersButton.BackgroundTransparency = 1.000
-EspPlayersButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EspPlayersButton.BorderSizePixel = 0
-EspPlayersButton.Position = UDim2.new(0.095588237, 0, 0.0282685876, 0)
-EspPlayersButton.Size = UDim2.new(0, 327, 0, 51)
-EspPlayersButton.Image = "rbxassetid://108930673431145"
+SpeedButton.MouseButton1Click:Connect(function()
+	speedAtivo = not speedAtivo
 
-EspPlayersText.Name = "EspPlayersText"
-EspPlayersText.Parent = EspPlayersButton
-EspPlayersText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EspPlayersText.BackgroundTransparency = 1.000
-EspPlayersText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EspPlayersText.BorderSizePixel = 0
-EspPlayersText.Position = UDim2.new(0.0581039769, 0, 0, 0)
-EspPlayersText.Size = UDim2.new(0, 96, 0, 50)
-EspPlayersText.Font = Enum.Font.DenkOne
-EspPlayersText.Text = "Esp Players"
-EspPlayersText.TextColor3 = Color3.fromRGB(255, 255, 255)
-EspPlayersText.TextSize = 22.000
-
-EspPlayers.Name = "☐EspPlayers"
-EspPlayers.Parent = EspPlayersButton
-EspPlayers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EspPlayers.BackgroundTransparency = 1.000
-EspPlayers.BorderColor3 = Color3.fromRGB(19, 11, 126)
-EspPlayers.BorderSizePixel = 0
-EspPlayers.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-EspPlayers.Size = UDim2.new(0, 31, 0, 29)
-EspPlayers.Font = Enum.Font.SourceSans
-EspPlayers.Text = "☐"
-EspPlayers.TextColor3 = Color3.fromRGB(20, 20, 172)
-EspPlayers.TextSize = 63.000
-
-WalkSpeedButton.Name = "WalkSpeedButton"
-WalkSpeedButton.Parent = ScrollPlayers
-WalkSpeedButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WalkSpeedButton.BackgroundTransparency = 1.000
-WalkSpeedButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-WalkSpeedButton.BorderSizePixel = 0
-WalkSpeedButton.Position = UDim2.new(0.095588237, 0, 0.207627028, 0)
-WalkSpeedButton.Size = UDim2.new(0, 327, 0, 76)
-WalkSpeedButton.Image = "rbxassetid://108930673431145"
-
-WalkSpeedText.Name = "WalkSpeedText"
-WalkSpeedText.Parent = WalkSpeedButton
-WalkSpeedText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WalkSpeedText.BackgroundTransparency = 1.000
-WalkSpeedText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-WalkSpeedText.BorderSizePixel = 0
-WalkSpeedText.Position = UDim2.new(0.0550658729, 0, 0.0675675665, 0)
-WalkSpeedText.Size = UDim2.new(0, 88, 0, 27)
-WalkSpeedText.Font = Enum.Font.DenkOne
-WalkSpeedText.Text = "Walk Speed"
-WalkSpeedText.TextColor3 = Color3.fromRGB(255, 255, 255)
-WalkSpeedText.TextSize = 22.000
-
-local Slider = Instance.new("Frame")
-Slider.Parent = Speed
-Slider.BackgroundColor3 = Color3.fromRGB(60,60,60)
-Slider.Position = UDim2.new(0.086, 0, 0.5, 0)
-Slider.Size = UDim2.new(0, 200, 0, 8)
-
-local Fill = Instance.new("Frame")
-Fill.Parent = Slider
-Fill.BackgroundColor3 = Color3.fromRGB(120,115,255)
-Fill.Size = UDim2.new(0, 0, 1, 0)
-
-local Knob = Instance.new("Frame")
-Knob.Parent = Slider
-Knob.Size = UDim2.new(0, 12, 0, 12)
-Knob.Position = UDim2.new(0, -6, 0.5, -6)
-Knob.BackgroundColor3 = Color3.fromRGB(255,255,255)
-
-local UIS = game:GetService("UserInputService")
-local dragging = false
-
-local minSpeed = 16
-local maxSpeed = 70
-
-Knob.InputBegan:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 then
-		dragging = true
+	if speedAtivo then
+		SpeedButton.Text = "▣"
+	else
+		SpeedButton.Text = "☐"
 	end
-end)
 
-UIS.InputEnded:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 then
-		dragging = false
-	end
-end)
-
-UIS.InputChanged:Connect(function(input)
-	if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-
-		local mousePos = input.Position.X
-		local sliderPos = Slider.AbsolutePosition.X
-		local sliderSize = Slider.AbsoluteSize.X
-
-		local percent = math.clamp((mousePos - sliderPos) / sliderSize, 0, 1)
-
-		-- mover bolinha
-		Knob.Position = UDim2.new(percent, -6, 0.5, -6)
-		Fill.Size = UDim2.new(percent, 0, 1, 0)
-
-		-- calcular velocidade
-		local speed = minSpeed + (maxSpeed - minSpeed) * percent
-
-		-- aplicar no player
-		local player = game.Players.LocalPlayer
-		local char = player.Character or player.CharacterAdded:Wait()
-		local humanoid = char:FindFirstChildOfClass("Humanoid")
-
-		if humanoid then
-			humanoid.WalkSpeed = speed
-		end
+	if player.Character then
+		aplicarSpeed(player.Character)
 	end
 end)
 
+player.CharacterAdded:Connect(function(char)
+	task.wait(0.5)
+	aplicarSpeed(char)
+end)
+
+-----------------------------------------------------------------------------------
+Jump.Name = "Jump"
+Jump.Parent = MainConfig
+Jump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jump.BackgroundTransparency = 1.000
+Jump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jump.BorderSizePixel = 0
+Jump.Position = UDim2.new(0.00499999989, 0, 0.74000001, 0)
+Jump.Size = UDim2.new(0, 407, 0, 58)
+Jump.Image = "rbxassetid://103863495321859"
+
+TextoJump.Name = "TextoJump"
+TextoJump.Parent = Jump
+TextoJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoJump.BackgroundTransparency = 1.000
+TextoJump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoJump.BorderSizePixel = 0
+TextoJump.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoJump.Size = UDim2.new(0, 220, 0, 32)
+TextoJump.Font = Enum.Font.Arial
+TextoJump.Text = "Jump"
+TextoJump.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoJump.TextSize = 17.000
+TextoJump.TextWrapped = true
+TextoJump.TextXAlignment = Enum.TextXAlignment.Left
 
 JumpButton.Name = "JumpButton"
-JumpButton.Parent = ScrollPlayers
+JumpButton.Parent = Jump
 JumpButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 JumpButton.BackgroundTransparency = 1.000
 JumpButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 JumpButton.BorderSizePixel = 0
-JumpButton.Position = UDim2.new(0.095588237, 0, 0.117231637, 0)
-JumpButton.Size = UDim2.new(0, 327, 0, 51)
-JumpButton.Image = "rbxassetid://108930673431145"
-
-JumpText.Name = "JumpText"
-JumpText.Parent = JumpButton
-JumpText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-JumpText.BackgroundTransparency = 1.000
-JumpText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-JumpText.BorderSizePixel = 0
-JumpText.Position = UDim2.new(0.0581039769, 0, -0.0980392173, 0)
-JumpText.Size = UDim2.new(0, 63, 0, 50)
-JumpText.Font = Enum.Font.DenkOne
-JumpText.Text = "Jump"
-JumpText.TextColor3 = Color3.fromRGB(255, 255, 255)
-JumpText.TextSize = 22.000
-
-Jump.Name = "☐Jump"
-Jump.Parent = JumpButton
-Jump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Jump.BackgroundTransparency = 1.000
-Jump.BorderColor3 = Color3.fromRGB(19, 11, 126)
-Jump.BorderSizePixel = 0
-Jump.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-Jump.Size = UDim2.new(0, 31, 0, 29)
-Jump.Font = Enum.Font.SourceSans
-Jump.Text = "☐"
-Jump.TextColor3 = Color3.fromRGB(20, 20, 172)
-Jump.TextSize = 63.000
+JumpButton.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+JumpButton.Size = UDim2.new(0, 36, 0, 33)
+JumpButton.Font = Enum.Font.SourceSansBold
+JumpButton.Text = "☐"
+JumpButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+JumpButton.TextSize = 55.000
 
 local ativoJump = false
 
-Jump.MouseButton1Click:Connect(function()
+JumpButton.MouseButton1Click:Connect(function()
 
 	ativoJump = not ativoJump
 
@@ -1081,13 +926,13 @@ Jump.MouseButton1Click:Connect(function()
 	local humanoid = character:WaitForChild("Humanoid")
 
 	if ativoJump then
-		Jump.Text = "▣"
+		JumpButton.Text = "▣"
 
 		humanoid.UseJumpPower = true
 		humanoid.JumpPower = 100
 
 	else
-		Jump.Text = "☐"
+		JumpButton.Text = "☐"
 
 		humanoid.UseJumpPower = true
 		humanoid.JumpPower = 50
@@ -1095,883 +940,1349 @@ Jump.MouseButton1Click:Connect(function()
 	end
 
 end)
+-----------------------------------------------------------------------------------
+HitBox.Name = "HitBox"
+HitBox.Parent = MainConfig
+HitBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HitBox.BackgroundTransparency = 1.000
+HitBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HitBox.BorderSizePixel = 0
+HitBox.Position = UDim2.new(0.00499999989, 0, 0.819999993, 0)
+HitBox.Size = UDim2.new(0, 407, 0, 58)
+HitBox.Image = "rbxassetid://103863495321859"
 
---------------------------------------------------------------------------------------------
+TextoHitBox.Name = "TextoHitBox"
+TextoHitBox.Parent = HitBox
+TextoHitBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoHitBox.BackgroundTransparency = 1.000
+TextoHitBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoHitBox.BorderSizePixel = 0
+TextoHitBox.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoHitBox.Size = UDim2.new(0, 220, 0, 32)
+TextoHitBox.Font = Enum.Font.Arial
+TextoHitBox.Text = "HitBox"
+TextoHitBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoHitBox.TextSize = 17.000
+TextoHitBox.TextWrapped = true
+TextoHitBox.TextXAlignment = Enum.TextXAlignment.Left
+
 HitBoxButton.Name = "HitBoxButton"
-HitBoxButton.Parent = ScrollPlayers
+HitBoxButton.Parent = HitBox
 HitBoxButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HitBoxButton.BackgroundTransparency = 1.000
 HitBoxButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 HitBoxButton.BorderSizePixel = 0
-HitBoxButton.Position = UDim2.new(0.095588237, 0, 0.330508671, 0)
-HitBoxButton.Size = UDim2.new(0, 327, 0, 68)
-HitBoxButton.Image = "rbxassetid://108930673431145"
+HitBoxButton.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+HitBoxButton.Size = UDim2.new(0, 36, 0, 33)
+HitBoxButton.Font = Enum.Font.SourceSansBold
+HitBoxButton.Text = "☐"
+HitBoxButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+HitBoxButton.TextSize = 55.000
+HitBoxButton.TextWrapped = true
+-----------------------------------------------------------------------------------
+AntiHitBox.Name = "Anti-HitBox"
+AntiHitBox.Parent = MainConfig
+AntiHitBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiHitBox.BackgroundTransparency = 1.000
+AntiHitBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiHitBox.BorderSizePixel = 0
+AntiHitBox.Position = UDim2.new(0.00499999989, 0, 0.899999976, 0)
+AntiHitBox.Size = UDim2.new(0, 407, 0, 58)
+AntiHitBox.Image = "rbxassetid://103863495321859"
 
-HitBoxText.Name = "HitBoxText"
-HitBoxText.Parent = HitBoxButton
-HitBoxText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-HitBoxText.BackgroundTransparency = 1.000
-HitBoxText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-HitBoxText.BorderSizePixel = 0
-HitBoxText.Position = UDim2.new(0.0550666317, 0, 0, 0)
-HitBoxText.Size = UDim2.new(0, 55, 0, 50)
-HitBoxText.Font = Enum.Font.DenkOne
-HitBoxText.Text = "Hit Box"
-HitBoxText.TextColor3 = Color3.fromRGB(255, 255, 255)
-HitBoxText.TextSize = 22.000
+TextoAntiHitBox.Name = "TextoAntiHitBox"
+TextoAntiHitBox.Parent = AntiHitBox
+TextoAntiHitBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoAntiHitBox.BackgroundTransparency = 1.000
+TextoAntiHitBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoAntiHitBox.BorderSizePixel = 0
+TextoAntiHitBox.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoAntiHitBox.Size = UDim2.new(0, 220, 0, 32)
+TextoAntiHitBox.Font = Enum.Font.Arial
+TextoAntiHitBox.Text = "Anti-HitBox"
+TextoAntiHitBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoAntiHitBox.TextSize = 17.000
+TextoAntiHitBox.TextWrapped = true
+TextoAntiHitBox.TextXAlignment = Enum.TextXAlignment.Left
 
-HitBox.Name = "☐HitBox"
-HitBox.Parent = HitBoxButton
-HitBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-HitBox.BackgroundTransparency = 1.000
-HitBox.BorderColor3 = Color3.fromRGB(19, 11, 126)
-HitBox.BorderSizePixel = 0
-HitBox.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-HitBox.Size = UDim2.new(0, 31, 0, 29)
-HitBox.Font = Enum.Font.SourceSans
-HitBox.Text = "☐"
-HitBox.TextColor3 = Color3.fromRGB(20, 20, 172)
-HitBox.TextSize = 63.000
+AntiHitBoxButton.Name = "AntiHitBoxButton"
+AntiHitBoxButton.Parent = AntiHitBox
+AntiHitBoxButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiHitBoxButton.BackgroundTransparency = 1.000
+AntiHitBoxButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiHitBoxButton.BorderSizePixel = 0
+AntiHitBoxButton.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+AntiHitBoxButton.Size = UDim2.new(0, 36, 0, 33)
+AntiHitBoxButton.Font = Enum.Font.SourceSansBold
+AntiHitBoxButton.Text = "☐"
+AntiHitBoxButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+AntiHitBoxButton.TextSize = 55.000
+AntiHitBoxButton.TextWrapped = true
+-----------------------------------------------------------------------------------
+Esp.Name = "Esp"
+Esp.Parent = MainConfig
+Esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Esp.BackgroundTransparency = 1.000
+Esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(0.00499999989, 0, 0.579999983, 0)
+Esp.Size = UDim2.new(0, 407, 0, 58)
+Esp.Image = "rbxassetid://103863495321859"
+
+TextoEsp.Name = "TextoEsp"
+TextoEsp.Parent = Esp
+TextoEsp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoEsp.BackgroundTransparency = 1.000
+TextoEsp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoEsp.BorderSizePixel = 0
+TextoEsp.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoEsp.Size = UDim2.new(0, 220, 0, 32)
+TextoEsp.Font = Enum.Font.Arial
+TextoEsp.Text = "Esp Players"
+TextoEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoEsp.TextSize = 17.000
+TextoEsp.TextWrapped = true
+TextoEsp.TextXAlignment = Enum.TextXAlignment.Left
+
+EspButton.Name = "EspButton"
+EspButton.Parent = Esp
+EspButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EspButton.BackgroundTransparency = 1.000
+EspButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EspButton.BorderSizePixel = 0
+EspButton.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+EspButton.Size = UDim2.new(0, 36, 0, 33)
+EspButton.Font = Enum.Font.SourceSansBold
+EspButton.Text = "☐"
+EspButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+EspButton.TextSize = 55.000
+
+local espPlayersAtivo = false
+local playerHighlights = {}
+local player = game.Players.LocalPlayer
+
+local function criarNomePlayer(character, player)
+	if not character or character:FindFirstChild("NameESP") then return end
+
+	local head = character:FindFirstChild("Head")
+	if not head then return end
+
+	local bill = Instance.new("BillboardGui")
+	bill.Name = "NameESP"
+	bill.Size = UDim2.new(0, 100, 0, 25)
+	bill.StudsOffset = Vector3.new(0, 2.5, 0)
+	bill.AlwaysOnTop = true
+	bill.Parent = head
+
+	local text = Instance.new("TextLabel")
+	text.Size = UDim2.new(1, 0, 1, 0)
+	text.BackgroundTransparency = 1
+	text.Text = player.Name
+	text.TextColor3 = Color3.fromRGB(255, 255, 255)
+	text.TextStrokeTransparency = 0 -- contorno
+	text.TextScaled = true
+	text.Font = Enum.Font.SourceSansBold
+	text.Parent = bill
+end
+
+local function criarESPPlayer(character)
+	if not character or character:FindFirstChild("PlayerESP") then return end
+
+	local highlight = Instance.new("Highlight")
+	highlight.Name = "PlayerESP"
+	highlight.FillColor = Color3.fromRGB(0, 0, 255)
+	highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+	highlight.FillTransparency = 0.5
+	highlight.OutlineTransparency = 0
+	highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+
+	highlight.Parent = character
+	table.insert(playerHighlights, highlight)
+end
+
+local function removerESPPlayers()
+	for _, h in pairs(playerHighlights) do
+		if h then
+			h:Destroy()
+		end
+	end
+	playerHighlights = {}
+
+	-- remove nomes
+	for _, plr in pairs(game.Players:GetPlayers()) do
+		if plr.Character then
+			local name = plr.Character:FindFirstChild("Head") and plr.Character.Head:FindFirstChild("NameESP")
+			if name then
+				name:Destroy()
+			end
+		end
+	end
+end
+
+local function aplicarESPPlayers()
+	for _, plr in pairs(game.Players:GetPlayers()) do
+		if plr ~= player then
+			if plr.Character then
+				criarESPPlayer(plr.Character)
+				criarNomePlayer(plr.Character, plr)
+			end
+		end
+	end
+end
+
+game.Players.PlayerAdded:Connect(function(plr)
+	plr.CharacterAdded:Connect(function(char)
+		if espPlayersAtivo then
+			task.wait(1)
+			criarESPPlayer(char)
+		end
+	end)
+end)
+
+-- BOTÃO CERTO
+EspButton.MouseButton1Click:Connect(function()
+	espPlayersAtivo = not espPlayersAtivo
+
+	EspButton.Text = espPlayersAtivo and "▣" or "☐"
+
+	if espPlayersAtivo then
+		aplicarESPPlayers()
+	else
+		removerESPPlayers()
+	end
+end)
+
+-----------------------------------------------------------------------------------
+MainButton.Name = "MainButton"
+MainButton.Parent = ConfiPanel
+MainButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainButton.BackgroundTransparency = 0.250
+MainButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainButton.BorderSizePixel = 0
+MainButton.Position = UDim2.new(0, 0, 0.186813191, 0)
+MainButton.Size = UDim2.new(0, 142, 0, 41)
+MainButton.Font = Enum.Font.FredokaOne
+MainButton.Text = "Main"
+MainButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainButton.TextSize = 22.000
+MainButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+MiscButton.Name = "MiscButton"
+MiscButton.Parent = ConfiPanel
+MiscButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MiscButton.BackgroundTransparency = 0.250
+MiscButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MiscButton.BorderSizePixel = 0
+MiscButton.Position = UDim2.new(0.00499168038, 0, 0.336670727, 0)
+MiscButton.Size = UDim2.new(0, 142, 0, 41)
+MiscButton.Font = Enum.Font.FredokaOne
+MiscButton.Text = "Misc"
+MiscButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiscButton.TextSize = 22.000
+MiscButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local function esconderTudo()
+	FrameMainFarm.Visible = false
+	FrameMisc.Visible = false
+end
+MainButton.MouseButton1Click:Connect(function()
+	esconderTudo()
+	FrameMainFarm.Visible = true
+end)
+MiscButton.MouseButton1Click:Connect(function()
+	esconderTudo()
+	FrameMisc.Visible = true
+end)
+
+FrameMisc.Name = "FrameMisc"
+FrameMisc.Parent = ConfiPanel
+FrameMisc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameMisc.BackgroundTransparency = 1.000
+FrameMisc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameMisc.BorderSizePixel = 0
+FrameMisc.Position = UDim2.new(0.257903486, 0, 0.197802201, 0)
+FrameMisc.Size = UDim2.new(0, 435, 0, 292)
+FrameMisc.Visible = false
+
+AntiAFK.Name = "Anti AFK"
+AntiAFK.Parent = FrameMisc
+AntiAFK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFK.BackgroundTransparency = 1.000
+AntiAFK.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiAFK.BorderSizePixel = 0
+AntiAFK.Position = UDim2.new(0.0298850574, 0, 0.0550352633, 0)
+AntiAFK.Size = UDim2.new(0, 407, 0, 58)
+AntiAFK.Image = "rbxassetid://103863495321859"
+
+AFKTsxt.Name = "AFKTsxt"
+AFKTsxt.Parent = AntiAFK
+AFKTsxt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AFKTsxt.BackgroundTransparency = 1.000
+AFKTsxt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AFKTsxt.BorderSizePixel = 0
+AFKTsxt.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+AFKTsxt.Size = UDim2.new(0, 65, 0, 32)
+AFKTsxt.Font = Enum.Font.Arial
+AFKTsxt.Text = "Anti AFK"
+AFKTsxt.TextColor3 = Color3.fromRGB(255, 255, 255)
+AFKTsxt.TextSize = 17.000
+AFKTsxt.TextWrapped = true
+AFKTsxt.TextXAlignment = Enum.TextXAlignment.Left
+
+AFK.Name = "AFK"
+AFK.Parent = AntiAFK
+AFK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AFK.BackgroundTransparency = 1.000
+AFK.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AFK.BorderSizePixel = 0
+AFK.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+AFK.Size = UDim2.new(0, 36, 0, 33)
+AFK.Font = Enum.Font.SourceSansBold
+AFK.Text = "☐"
+AFK.TextColor3 = Color3.fromRGB(6, 9, 206)
+AFK.TextSize = 55.000
+AFK.TextWrapped = true
+
+FPS.Name = "FPS"
+FPS.Parent = FrameMisc
+FPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPS.BackgroundTransparency = 1.000
+FPS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FPS.BorderSizePixel = 0
+FPS.Position = UDim2.new(0.0298850574, 0, 0.287911981, 0)
+FPS.Size = UDim2.new(0, 407, 0, 58)
+FPS.Image = "rbxassetid://103863495321859"
+
+TextoFPS.Name = "TextoFPS"
+TextoFPS.Parent = FPS
+TextoFPS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoFPS.BackgroundTransparency = 1.000
+TextoFPS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoFPS.BorderSizePixel = 0
+TextoFPS.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoFPS.Size = UDim2.new(0, 79, 0, 32)
+TextoFPS.Font = Enum.Font.Arial
+TextoFPS.Text = "FPS Boost"
+TextoFPS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoFPS.TextSize = 17.000
+TextoFPS.TextWrapped = true
+TextoFPS.TextXAlignment = Enum.TextXAlignment.Left
+
+FBSbutton.Name = "FBSbutton"
+FBSbutton.Parent = FPS
+FBSbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FBSbutton.BackgroundTransparency = 1.000
+FBSbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FBSbutton.BorderSizePixel = 0
+FBSbutton.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+FBSbutton.Size = UDim2.new(0, 36, 0, 33)
+FBSbutton.Font = Enum.Font.SourceSansBold
+FBSbutton.Text = "☐"
+FBSbutton.TextColor3 = Color3.fromRGB(6, 9, 206)
+FBSbutton.TextSize = 55.000
+FBSbutton.TextWrapped = true
+
+Invisible.Name = "Invisible"
+Invisible.Parent = FrameMisc
+Invisible.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Invisible.BackgroundTransparency = 1.000
+Invisible.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Invisible.BorderSizePixel = 0
+Invisible.Position = UDim2.new(0.0302873291, 0, 0.525342464, 0)
+Invisible.Size = UDim2.new(0, 407, 0, 58)
+Invisible.Image = "rbxassetid://103863495321859"
+
+TextoInvisible.Name = "TextoInvisible"
+TextoInvisible.Parent = Invisible
+TextoInvisible.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextoInvisible.BackgroundTransparency = 1.000
+TextoInvisible.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextoInvisible.BorderSizePixel = 0
+TextoInvisible.Position = UDim2.new(0.0687960684, 0, 0.241655543, 0)
+TextoInvisible.Size = UDim2.new(0, 220, 0, 32)
+TextoInvisible.Font = Enum.Font.Arial
+TextoInvisible.Text = "Invisible"
+TextoInvisible.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextoInvisible.TextSize = 17.000
+TextoInvisible.TextWrapped = true
+TextoInvisible.TextXAlignment = Enum.TextXAlignment.Left
 
 InvisibleButton.Name = "InvisibleButton"
-InvisibleButton.Parent = ScrollPlayers
+InvisibleButton.Parent = Invisible
 InvisibleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 InvisibleButton.BackgroundTransparency = 1.000
 InvisibleButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 InvisibleButton.BorderSizePixel = 0
-InvisibleButton.Position = UDim2.new(0.095588237, 0, 0.615256235, 0)
-InvisibleButton.Size = UDim2.new(0, 327, 0, 51)
-InvisibleButton.Image = "rbxassetid://108930673431145"
+InvisibleButton.Position = UDim2.new(0.857493877, 0, 0.207172781, 0)
+InvisibleButton.Size = UDim2.new(0, 36, 0, 33)
+InvisibleButton.Font = Enum.Font.SourceSansBold
+InvisibleButton.Text = "☐"
+InvisibleButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+InvisibleButton.TextSize = 55.000
+InvisibleButton.TextWrapped = true
 
-InvisibleText.Name = "InvisibleText"
-InvisibleText.Parent = InvisibleButton
-InvisibleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-InvisibleText.BackgroundTransparency = 1.000
-InvisibleText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-InvisibleText.BorderSizePixel = 0
-InvisibleText.Position = UDim2.new(0.0581039769, 0, 0, 0)
-InvisibleText.Size = UDim2.new(0, 67, 0, 50)
-InvisibleText.Font = Enum.Font.DenkOne
-InvisibleText.Text = "Invisible"
-InvisibleText.TextColor3 = Color3.fromRGB(255, 255, 255)
-InvisibleText.TextSize = 22.000
+closePanel2.Name = "closePanel2"
+closePanel2.Parent = ConfiPanel
+closePanel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closePanel2.BackgroundTransparency = 1.000
+closePanel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closePanel2.BorderSizePixel = 0
+closePanel2.Position = UDim2.new(0.957030058, 0, -0.0058308905, 0)
+closePanel2.Size = UDim2.new(0, 25, 0, 25)
+closePanel2.Font = Enum.Font.SourceSansBold
+closePanel2.Text = "x"
+closePanel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+closePanel2.TextScaled = true
+closePanel2.TextSize = 14.000
+closePanel2.TextWrapped = true
 
-Invisible.Name = "☐Invisible"
-Invisible.Parent = InvisibleButton
-Invisible.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Invisible.BackgroundTransparency = 1.000
-Invisible.BorderColor3 = Color3.fromRGB(19, 11, 126)
-Invisible.BorderSizePixel = 0
-Invisible.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-Invisible.Size = UDim2.new(0, 31, 0, 29)
-Invisible.Font = Enum.Font.SourceSans
-Invisible.Text = "☐"
-Invisible.TextColor3 = Color3.fromRGB(20, 20, 172)
-Invisible.TextSize = 63.000
-
-AntiHitButton.Name = "AntiHitButton"
-AntiHitButton.Parent = ScrollPlayers
-AntiHitButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiHitButton.BackgroundTransparency = 1.000
-AntiHitButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AntiHitButton.BorderSizePixel = 0
-AntiHitButton.Position = UDim2.new(0.095588237, 0, 0.502826863, 0)
-AntiHitButton.Size = UDim2.new(0, 327, 0, 51)
-AntiHitButton.Image = "rbxassetid://108930673431145"
-
-AntiHitText.Name = "AntiHitText"
-AntiHitText.Parent = AntiHitButton
-AntiHitText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiHitText.BackgroundTransparency = 1.000
-AntiHitText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AntiHitText.BorderSizePixel = 0
-AntiHitText.Position = UDim2.new(0.0581065337, 0, 0, 0)
-AntiHitText.Size = UDim2.new(0, 60, 0, 50)
-AntiHitText.Font = Enum.Font.DenkOne
-AntiHitText.Text = "Anti Hit"
-AntiHitText.TextColor3 = Color3.fromRGB(255, 255, 255)
-AntiHitText.TextSize = 22.000
-
-AntiHit.Name = "☐AntiHit"
-AntiHit.Parent = AntiHitButton
-AntiHit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiHit.BackgroundTransparency = 1.000
-AntiHit.BorderColor3 = Color3.fromRGB(19, 11, 126)
-AntiHit.BorderSizePixel = 0
-AntiHit.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-AntiHit.Size = UDim2.new(0, 31, 0, 29)
-AntiHit.Font = Enum.Font.SourceSans
-AntiHit.Text = "☐"
-AntiHit.TextColor3 = Color3.fromRGB(20, 20, 172)
-AntiHit.TextSize = 63.000
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-AutoBuyButton.Name = "AutoBuyButton"
-AutoBuyButton.Parent = ScrollAutoFarm
-AutoBuyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoBuyButton.BackgroundTransparency = 1.000
-AutoBuyButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoBuyButton.BorderSizePixel = 0
-AutoBuyButton.Position = UDim2.new(0.095588237, 0, 0.117231637, 0)
-AutoBuyButton.Size = UDim2.new(0, 327, 0, 51)
-AutoBuyButton.Image = "rbxassetid://108930673431145"
-
-AutoBuyText.Name = "AutoBuyText"
-AutoBuyText.Parent = AutoBuyButton
-AutoBuyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoBuyText.BackgroundTransparency = 1.000
-AutoBuyText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoBuyText.BorderSizePixel = 0
-AutoBuyText.Position = UDim2.new(0.0581039769, 0, 0, 0)
-AutoBuyText.Size = UDim2.new(0, 86, 0, 50)
-AutoBuyText.Font = Enum.Font.DenkOne
-AutoBuyText.Text = "Auto Buy"
-AutoBuyText.TextColor3 = Color3.fromRGB(255, 255, 255)
-AutoBuyText.TextSize = 22.000
-
-AutoBuyButton_2.Name = "AutoBuyButton"
-AutoBuyButton_2.Parent = AutoBuyButton
-AutoBuyButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AutoBuyButton_2.BackgroundTransparency = 1.000
-AutoBuyButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AutoBuyButton_2.BorderSizePixel = 0
-AutoBuyButton_2.Position = UDim2.new(0.696189608, 0, 0.156862751, 0)
-AutoBuyButton_2.Size = UDim2.new(0, 83, 0, 35)
-AutoBuyButton_2.Image = "rbxassetid://128910264089028"
-
-
-local FrameAberto = false
-
-AutoBuyButton_2.MouseButton1Click:Connect(function()
-	FrameAberto = not FrameAberto
-	FrameBrainrotBuy.Visible = FrameAberto
+closePanel2.MouseButton1Click:Connect(function()
+	ConfiPanel.Visible = false
 end)
+-----------------------------------------------------------------------------------
 
-local selecionados = {
-	Common = false,
-	Uncommon = false,
-	Rare = false,
-	Epic = false,
-	Legendary = false,
-	Mythic = false,
-	Secret = false
-}
+SelectBuy_2.Name = "SelectBuy"
+SelectBuy_2.Parent = PanelHub
+SelectBuy_2.BackgroundColor3 = Color3.fromRGB(11, 11, 11)
+SelectBuy_2.BorderColor3 = Color3.fromRGB(28, 30, 130)
+SelectBuy_2.BorderSizePixel = 3
+SelectBuy_2.Position = UDim2.new(0.836253345, 0, 0.0701697171, 0)
+SelectBuy_2.Size = UDim2.new(0, 168, 0, 347)
+SelectBuy_2.Visible = false
+-----------------------------------------------------------------------------------
+Common.Name = "Common"
+Common.Parent = SelectBuy_2
+Common.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Common.BackgroundTransparency = 1.000
+Common.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Common.BorderSizePixel = 0
+Common.Position = UDim2.new(0.0505952388, 0, 0.0859263316, 0)
+Common.Size = UDim2.new(0, 151, 0, 38)
+Common.Image = "rbxassetid://103863495321859"
 
-local function toggle(botao, nome)
-	selecionados[nome] = not selecionados[nome]
-
-	if selecionados[nome] then
-		botao.Text = "▣"
-	else
-		botao.Text = "☐"
-	end
-end
-
-common.MouseButton1Click:Connect(function()
-	toggle(common, "Common")
-end)
-
-uncommon.MouseButton1Click:Connect(function()
-	toggle(uncommon, "Uncommon")
-end)
-
-Rare.MouseButton1Click:Connect(function()
-	toggle(Rare, "Rare")
-end)
-
-Epic.MouseButton1Click:Connect(function()
-	toggle(Epic, "Epic")
-end)
-
-Legendary.MouseButton1Click:Connect(function()
-	toggle(Legendary, "Legendary")
-end)
-
-Mythic.MouseButton1Click:Connect(function()
-	toggle(Mythic, "Mythic")
-end)
-
-Secret.MouseButton1Click:Connect(function()
-	toggle(Secret, "Secret")
-end)
-
---------------------------------------------------------------------------------------------
-FrameBrainrotBuy.Name = "FrameBrainrotBuy"
-FrameBrainrotBuy.Parent = AutoBuyButton
-FrameBrainrotBuy.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-FrameBrainrotBuy.BorderColor3 = Color3.fromRGB(8, 9, 121)
-FrameBrainrotBuy.BorderSizePixel = 3
-FrameBrainrotBuy.LayoutOrder = -1
-FrameBrainrotBuy.Position = UDim2.new(-0.0689296652, 0, 1.03863137, 0)
-FrameBrainrotBuy.Size = UDim2.new(0, 359, 0, 551)
-FrameBrainrotBuy.Visible = false
-
-UICorner.Parent = FrameBrainrotBuy
-local stroke = Instance.new("UIStroke")
-stroke.Parent = FrameBrainrotBuy
-stroke.Color = Color3.fromRGB(8, 9, 121)
-stroke.Thickness = 2
-
-
-CommonBrainrot.Name = "CommonBrainrot"
-CommonBrainrot.Parent = FrameBrainrotBuy
-CommonBrainrot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CommonBrainrot.BackgroundTransparency = 1.000
-CommonBrainrot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CommonBrainrot.BorderSizePixel = 0
-CommonBrainrot.Position = UDim2.new(0.0976930376, 0, 0.0311553273, 0)
-CommonBrainrot.Size = UDim2.new(0, 288, 0, 63)
-CommonBrainrot.Image = "rbxassetid://108930673431145"
+CommonButton.Name = "CommonButton"
+CommonButton.Parent = Common
+CommonButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CommonButton.BackgroundTransparency = 1.000
+CommonButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CommonButton.BorderSizePixel = 0
+CommonButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+CommonButton.Size = UDim2.new(0, 27, 0, 23)
+CommonButton.Font = Enum.Font.SourceSansBold
+CommonButton.Text = "☐"
+CommonButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+CommonButton.TextSize = 41.000
+CommonButton.TextWrapped = true
 
 CommonText.Name = "CommonText"
-CommonText.Parent = CommonBrainrot
+CommonText.Parent = Common
 CommonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CommonText.BackgroundTransparency = 1.000
 CommonText.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CommonText.BorderSizePixel = 0
-CommonText.Size = UDim2.new(0, 166, 0, 66)
-CommonText.Font = Enum.Font.DenkOne
-CommonText.Text = "Brainrot Common"
+CommonText.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+CommonText.Size = UDim2.new(0, 117, 0, 22)
+CommonText.Font = Enum.Font.SourceSans
+CommonText.Text = "Common"
 CommonText.TextColor3 = Color3.fromRGB(255, 255, 255)
-CommonText.TextSize = 18.000
+CommonText.TextSize = 21.000
+CommonText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+CommonText.TextWrapped = true
+CommonText.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+Uncommon.Name = "Uncommon"
+Uncommon.Parent = SelectBuy_2
+Uncommon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Uncommon.BackgroundTransparency = 1.000
+Uncommon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Uncommon.BorderSizePixel = 0
+Uncommon.Position = UDim2.new(0.0505952388, 0, 0.212727487, 0)
+Uncommon.Size = UDim2.new(0, 151, 0, 38)
+Uncommon.Image = "rbxassetid://103863495321859"
 
-common.Name = "☐common"
-common.Parent = CommonBrainrot
-common.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-common.BackgroundTransparency = 1.000
-common.BorderColor3 = Color3.fromRGB(19, 11, 126)
-common.BorderSizePixel = 0
-common.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-common.Size = UDim2.new(0, 31, 0, 29)
-common.Font = Enum.Font.SourceSans
-common.Text = "☐"
-common.TextColor3 = Color3.fromRGB(20, 20, 172)
-common.TextSize = 63.000
+UncommonButton.Name = "UncommonButton"
+UncommonButton.Parent = Uncommon
+UncommonButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UncommonButton.BackgroundTransparency = 1.000
+UncommonButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UncommonButton.BorderSizePixel = 0
+UncommonButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+UncommonButton.Size = UDim2.new(0, 27, 0, 23)
+UncommonButton.Font = Enum.Font.SourceSansBold
+UncommonButton.Text = "☐"
+UncommonButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+UncommonButton.TextSize = 41.000
+UncommonButton.TextWrapped = true
 
-local autoBuy = {
-	Common = false,
-}
-
-
-local lists = {
-	Common = {
-		["Pipi Potato $1K"] = true,
-		["Noobini Pizzanini $0"] = true,
-		["Tric Trac Barabum $1.25K"] = true,
-		["Fluri Flura $500"] = true,
-		["LiriliLarila $250"] = true,
-		["Cacto Hipopotamo $750"] = true,
-		["Burbaloni Loliloli $1.5K"] = true
-	}
-}
-
-
-common.MouseButton1Click:Connect(function()
-	autoBuy.Common = not autoBuy.Common
-
-	if autoBuy.Common then
-		common.Text = "▣"
-	else
-		common.Text = "☐"
-	end
-end)
-
-local cooldown = {}
-
-local function autoBuyFunc()
-	for _,v in pairs(workspace:GetDescendants()) do
-		if v:IsA("ProximityPrompt") then
-
-			for raridade,ativo in pairs(autoBuy) do
-
-				if ativo and lists[raridade] and lists[raridade][v.ObjectText] then
-
-					if not cooldown[v] then
-						cooldown[v] = true
-
-						fireproximityprompt(v, 1)
-
-						task.delay(2,function()
-							cooldown[v] = nil
-						end)
-					end
-				end
-			end
-		end
-	end
-end
-
-task.spawn(function()
-	while true do
-		task.wait(0.2)
-		pcall(autoBuyFunc)
-	end
-end)
-
---------------------------------------------------------------------------------------------
-UncommonBrainrot.Name = "UncommonBrainrot"
-UncommonBrainrot.Parent = FrameBrainrotBuy
-UncommonBrainrot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UncommonBrainrot.BackgroundTransparency = 1.000
-UncommonBrainrot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-UncommonBrainrot.BorderSizePixel = 0
-UncommonBrainrot.Position = UDim2.new(0.0967075188, 0, 0.173299968, 0)
-UncommonBrainrot.Size = UDim2.new(0, 291, 0, 66)
-UncommonBrainrot.Image = "rbxassetid://108930673431145"
-
-uncommon.Name = "☐uncommon"
-uncommon.Parent = UncommonBrainrot
-uncommon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-uncommon.BackgroundTransparency = 1.000
-uncommon.BorderColor3 = Color3.fromRGB(19, 11, 126)
-uncommon.BorderSizePixel = 0
-uncommon.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-uncommon.Size = UDim2.new(0, 31, 0, 29)
-uncommon.Font = Enum.Font.SourceSans
-uncommon.Text = "☐"
-uncommon.TextColor3 = Color3.fromRGB(20, 20, 172)
-uncommon.TextSize = 63.000
-
-UncommonText.Name = "UncommonText"
-UncommonText.Parent = UncommonBrainrot
-UncommonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UncommonText.BackgroundTransparency = 1.000
-UncommonText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-UncommonText.BorderSizePixel = 0
-UncommonText.Size = UDim2.new(0, 166, 0, 66)
-UncommonText.Font = Enum.Font.DenkOne
-UncommonText.Text = "Brainrot Uncommon"
-UncommonText.TextColor3 = Color3.fromRGB(255, 255, 255)
-UncommonText.TextSize = 18.000
-
-
-local autoBuy2 = {
-	uncommon = false,
-}
-
-
-local lists2 = {
-	Uncommon = {
-		["Bambini Crostini $5K"] = true,
-		["Boneca Ambalabu $2K"] = true,
-		["Bandito Bobrito $7.7K"] = true,
-		["Trippi Troppi $6K"] = true,
-		["Svinina Bombardino $6.5K"] = true,
-		["Avocadini Guffo $7K"] = true,
-		["Tatatata Sahur $9K"] = true 
-	}
-}
-
-
-uncommon.MouseButton1Click:Connect(function()
-	autoBuy2.Unommon = not autoBuy2.Uncommon
-
-	if autoBuy2.Uncommon then
-		uncommon.Text = "▣"
-	else
-		uncommon.Text = "☐"
-	end
-end)
-
-local cooldown2 = {}
-
-local function autoBuy2Func()
-	for _,v in pairs(workspace:GetDescendants()) do
-		if v:IsA("ProximityPrompt") then
-
-			for raridade2,ativo2 in pairs(autoBuy2) do
-
-				if ativo2 and lists2[raridade2] and lists2[raridade2][v.ObjectText] then
-
-					if not cooldown2[v] then
-						cooldown2[v] = true
-
-						fireproximityprompt(v, 1)
-
-						task.delay(2,function()
-							cooldown2[v] = nil
-						end)
-					end
-				end
-			end
-		end
-	end
-end
-
-task.spawn(function()
-	while true do
-		task.wait(0.2)
-		pcall(autoBuy2Func)
-	end
-end)
----------------------------------------------------------------------------
-RareBrainrot.Name = "RareBrainrot"
-RareBrainrot.Parent = FrameBrainrotBuy
-RareBrainrot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RareBrainrot.BackgroundTransparency = 1.000
-RareBrainrot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RareBrainrot.BorderSizePixel = 0
-RareBrainrot.Position = UDim2.new(0.0976930376, 0, 0.310657081, 0)
-RareBrainrot.Size = UDim2.new(0, 291, 0, 66)
-RareBrainrot.Image = "rbxassetid://108930673431145"
-
-Rare.Name = "☐Rare"
-Rare.Parent = RareBrainrot
+TextUncommon.Name = "TextUncommon"
+TextUncommon.Parent = Uncommon
+TextUncommon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextUncommon.BackgroundTransparency = 1.000
+TextUncommon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextUncommon.BorderSizePixel = 0
+TextUncommon.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextUncommon.Size = UDim2.new(0, 117, 0, 22)
+TextUncommon.Font = Enum.Font.SourceSans
+TextUncommon.Text = "Uncommon"
+TextUncommon.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextUncommon.TextSize = 21.000
+TextUncommon.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextUncommon.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+Rare.Name = "Rare"
+Rare.Parent = SelectBuy_2
 Rare.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Rare.BackgroundTransparency = 1.000
-Rare.BorderColor3 = Color3.fromRGB(19, 11, 126)
+Rare.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Rare.BorderSizePixel = 0
-Rare.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-Rare.Size = UDim2.new(0, 31, 0, 29)
-Rare.Font = Enum.Font.SourceSans
-Rare.Text = "☐"
-Rare.TextColor3 = Color3.fromRGB(20, 20, 172)
-Rare.TextSize = 63.000
+Rare.Position = UDim2.new(0.0505952388, 0, 0.342410475, 0)
+Rare.Size = UDim2.new(0, 151, 0, 38)
+Rare.Image = "rbxassetid://103863495321859"
 
-RareText.Name = "RareText"
-RareText.Parent = RareBrainrot
-RareText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RareText.BackgroundTransparency = 1.000
-RareText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RareText.BorderSizePixel = 0
-RareText.Size = UDim2.new(0, 166, 0, 66)
-RareText.Font = Enum.Font.DenkOne
-RareText.Text = "Brainrot Rare"
-RareText.TextColor3 = Color3.fromRGB(255, 255, 255)
-RareText.TextSize = 18.000
+RareButton.Name = "RareButton"
+RareButton.Parent = Rare
+RareButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RareButton.BackgroundTransparency = 1.000
+RareButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RareButton.BorderSizePixel = 0
+RareButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+RareButton.Size = UDim2.new(0, 27, 0, 23)
+RareButton.Font = Enum.Font.SourceSansBold
+RareButton.Text = "☐"
+RareButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+RareButton.TextSize = 41.000
+RareButton.TextWrapped = true
 
-local autoBuy3 = {
-	Rare = false,
-}
-
-
-local lists3 = {
-	Rare = {
-		["Espresso Signora $27.5K"] = true,
-		["Talpa Di Fero $25K"] = true,
-		["Cappuccino Assassino $17.5K"] = true,
-		["Gangster Footera $10K"] = true,
-		["Tung Tung Sahur $15K"] = true,
-		["Orangutini Ananassini $22.5K"] = true,
-		["Pipi Kiwi $20K"] = true 
-	}
-}
-
-
-Rare.MouseButton1Click:Connect(function()
-	autoBuy3.Rare = not autoBuy3.Rare
-
-	if autoBuy3.Rare then
-		Rare.Text = "▣"
-	else
-		Rare.Text = "☐"
-	end
-end)
-
-local cooldown3 = {}
-
-local function autoBuy3Func()
-	for _,v in pairs(workspace:GetDescendants()) do
-		if v:IsA("ProximityPrompt") then
-
-			for raridade3,ativo3 in pairs(autoBuy3) do
-
-				if ativo3 and lists3[raridade3] and lists3[raridade3][v.ObjectText] then
-
-					if not cooldown3[v] then
-						cooldown3[v] = true
-
-						fireproximityprompt(v, 1)
-
-						task.delay(2,function()
-							cooldown3[v] = nil
-						end)
-					end
-				end
-			end
-		end
-	end
-end
-
-task.spawn(function()
-	while true do
-		task.wait(0.2)
-		pcall(autoBuy3Func)
-	end
-end)
-
-
--------------------------------------------------------------------------
-EpicBrainrot.Name = "EpicBrainrot"
-EpicBrainrot.Parent = FrameBrainrotBuy
-EpicBrainrot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EpicBrainrot.BackgroundTransparency = 1.000
-EpicBrainrot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EpicBrainrot.BorderSizePixel = 0
-EpicBrainrot.Position = UDim2.new(0.0967075188, 0, 0.452601701, 0)
-EpicBrainrot.Size = UDim2.new(0, 291, 0, 66)
-EpicBrainrot.Image = "rbxassetid://108930673431145"
-
-Epic.Name = "☐Epic"
-Epic.Parent = EpicBrainrot
+TextRare.Name = "TextRare"
+TextRare.Parent = Rare
+TextRare.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextRare.BackgroundTransparency = 1.000
+TextRare.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextRare.BorderSizePixel = 0
+TextRare.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextRare.Size = UDim2.new(0, 117, 0, 22)
+TextRare.Font = Enum.Font.SourceSans
+TextRare.Text = "Rare"
+TextRare.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextRare.TextSize = 21.000
+TextRare.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextRare.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+Epic.Name = "Epic"
+Epic.Parent = SelectBuy_2
 Epic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Epic.BackgroundTransparency = 1.000
-Epic.BorderColor3 = Color3.fromRGB(19, 11, 126)
+Epic.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Epic.BorderSizePixel = 0
-Epic.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-Epic.Size = UDim2.new(0, 31, 0, 29)
-Epic.Font = Enum.Font.SourceSans
-Epic.Text = "☐"
-Epic.TextColor3 = Color3.fromRGB(20, 20, 172)
-Epic.TextSize = 63.000
+Epic.Position = UDim2.new(0.0505952388, 0, 0.472093463, 0)
+Epic.Size = UDim2.new(0, 151, 0, 38)
+Epic.Image = "rbxassetid://103863495321859"
 
-EpicText.Name = "EpicText"
-EpicText.Parent = EpicBrainrot
-EpicText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EpicText.BackgroundTransparency = 1.000
-EpicText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-EpicText.BorderSizePixel = 0
-EpicText.Size = UDim2.new(0, 166, 0, 66)
-EpicText.Font = Enum.Font.DenkOne
-EpicText.Text = "Brainrot Epic"
-EpicText.TextColor3 = Color3.fromRGB(255, 255, 255)
-EpicText.TextSize = 18.000
+EpicButton.Name = "EpicButton"
+EpicButton.Parent = Epic
+EpicButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EpicButton.BackgroundTransparency = 1.000
+EpicButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EpicButton.BorderSizePixel = 0
+EpicButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+EpicButton.Size = UDim2.new(0, 27, 0, 23)
+EpicButton.Font = Enum.Font.SourceSansBold
+EpicButton.Text = "☐"
+EpicButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+EpicButton.TextSize = 41.000
+EpicButton.TextWrapped = true
 
-local autoBuy6 = {
-	Epic = false,
-}
-
-
-local lists6 = {
-	Epic = {
-		["Rhino Toasterino $50K"] = true,
-		["Brr Brr Patapim $32.5K"] = true,
-		["Glorbo Fruttodrillo $225K"] = true,
-		["Brr Bicus Dicus $100K"] = true,
-		["Bananito Delfinito $175K"] = true,
-		["Balerina Capucina $200K"] = true,
-		["Strawberrelli Flamingelli $160K"] = true 
-	}
-}
-
-
-Rare.MouseButton1Click:Connect(function()
-	autoBuy6.Epic = not autoBuy6.Epic
-
-	if autoBuy6.Epic then
-		Epic.Text = "▣"
-	else
-		Epic.Text = "☐"
-	end
-end)
-
-local cooldown6 = {}
-
-local function autoBuy6Func()
-	for _,v in pairs(workspace:GetDescendants()) do
-		if v:IsA("ProximityPrompt") then
-
-			for raridade6,ativo6 in pairs(autoBuy6) do
-
-				if ativo6 and lists6[raridade6] and lists6[raridade6][v.ObjectText] then
-
-					if not cooldown6[v] then
-						cooldown6[v] = true
-
-						fireproximityprompt(v, 1)
-
-						task.delay(2,function()
-							cooldown6[v] = nil
-						end)
-					end
-				end
-			end
-		end
-	end
-end
-
-task.spawn(function()
-	while true do
-		task.wait(0.2)
-		pcall(autoBuy6Func)
-	end
-end)
--------------------------------------------------------------------------------
-LegendaryBrainrot.Name = "LegendaryBrainrot"
-LegendaryBrainrot.Parent = FrameBrainrotBuy
-LegendaryBrainrot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LegendaryBrainrot.BackgroundTransparency = 1.000
-LegendaryBrainrot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LegendaryBrainrot.BorderSizePixel = 0
-LegendaryBrainrot.Position = UDim2.new(0.0967075188, 0, 0.59726009, 0)
-LegendaryBrainrot.Size = UDim2.new(0, 291, 0, 66)
-LegendaryBrainrot.Image = "rbxassetid://108930673431145"
-
-Legendary.Name = "☐Legendary"
-Legendary.Parent = LegendaryBrainrot
+TextEpic.Name = "TextEpic"
+TextEpic.Parent = Epic
+TextEpic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextEpic.BackgroundTransparency = 1.000
+TextEpic.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextEpic.BorderSizePixel = 0
+TextEpic.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextEpic.Size = UDim2.new(0, 117, 0, 22)
+TextEpic.Font = Enum.Font.SourceSans
+TextEpic.Text = "Epic"
+TextEpic.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextEpic.TextSize = 21.000
+TextEpic.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextEpic.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+Legendary.Name = "Legendary"
+Legendary.Parent = SelectBuy_2
 Legendary.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Legendary.BackgroundTransparency = 1.000
-Legendary.BorderColor3 = Color3.fromRGB(19, 11, 126)
+Legendary.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Legendary.BorderSizePixel = 0
-Legendary.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-Legendary.Size = UDim2.new(0, 31, 0, 29)
-Legendary.Font = Enum.Font.SourceSans
-Legendary.Text = "☐"
-Legendary.TextColor3 = Color3.fromRGB(20, 20, 172)
-Legendary.TextSize = 63.000
+Legendary.Position = UDim2.new(0.0505952388, 0, 0.601776481, 0)
+Legendary.Size = UDim2.new(0, 151, 0, 38)
+Legendary.Image = "rbxassetid://103863495321859"
 
-LegendaryText.Name = "LegendaryText"
-LegendaryText.Parent = LegendaryBrainrot
-LegendaryText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LegendaryText.BackgroundTransparency = 1.000
-LegendaryText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-LegendaryText.BorderSizePixel = 0
-LegendaryText.Size = UDim2.new(0, 166, 0, 66)
-LegendaryText.Font = Enum.Font.DenkOne
-LegendaryText.Text = "Brainrot Legendary"
-LegendaryText.TextColor3 = Color3.fromRGB(255, 255, 255)
-LegendaryText.TextSize = 18.000
+LegendaryButton.Name = "LegendaryButton"
+LegendaryButton.Parent = Legendary
+LegendaryButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LegendaryButton.BackgroundTransparency = 1.000
+LegendaryButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LegendaryButton.BorderSizePixel = 0
+LegendaryButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+LegendaryButton.Size = UDim2.new(0, 27, 0, 23)
+LegendaryButton.Font = Enum.Font.SourceSansBold
+LegendaryButton.Text = "☐"
+LegendaryButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+LegendaryButton.TextSize = 41.000
+LegendaryButton.TextWrapped = true
 
-local autoBuy5 = {
-	Legendary = false,
-}
-
-
-local lists5 = {
-	Legendary = {
-		["Blueberrinni Octopusini $350K"] = true,
-		["Chef Crabracadabra $3M"] = true,
-		["Bombombini Gusini $950K"] = true,
-		["Elefanto Cocofanto $500K"] = true,
-		["Pandaccini Bananini $2.5M"] = true,
-		["Bombardiro Crocodilo $650K"] = true,
-		["Pandaccini Bananini $2.5M "] = true 
-	}
-}
-
-
-Rare.MouseButton1Click:Connect(function()
-	autoBuy5.Legendary = not autoBuy5.Legendary
-
-	if autoBuy5.Legendary then
-		Legendary.Text = "▣"
-	else
-		Legendary.Text = "☐"
-	end
-end)
-
-local cooldown5 = {}
-
-local function autoBuy5Func()
-	for _,v in pairs(workspace:GetDescendants()) do
-		if v:IsA("ProximityPrompt") then
-
-			for raridade5,ativo5 in pairs(autoBuy5) do
-
-				if ativo5 and lists5[raridade5] and lists5[raridade5][v.ObjectText] then
-
-					if not cooldown5[v] then
-						cooldown5[v] = true
-
-						fireproximityprompt(v, 1)
-
-						task.delay(2,function()
-							cooldown5[v] = nil
-						end)
-					end
-				end
-			end
-		end
-	end
-end
-
-task.spawn(function()
-	while true do
-		task.wait(0.2)
-		pcall(autoBuy5Func)
-	end
-end)
--------------------------------------------------------------------------------
-MythicBrainrot.Name = "MythicBrainrot"
-MythicBrainrot.Parent = FrameBrainrotBuy
-MythicBrainrot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MythicBrainrot.BackgroundTransparency = 1.000
-MythicBrainrot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MythicBrainrot.BorderSizePixel = 0
-MythicBrainrot.Position = UDim2.new(0.0967075188, 0, 0.729609695, 0)
-MythicBrainrot.Size = UDim2.new(0, 291, 0, 66)
-MythicBrainrot.Image = "rbxassetid://108930673431145"
-
-Mythic.Name = "☐Mythic"
-Mythic.Parent = MythicBrainrot
+TextLegendary.Name = "TextLegendary"
+TextLegendary.Parent = Legendary
+TextLegendary.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLegendary.BackgroundTransparency = 1.000
+TextLegendary.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLegendary.BorderSizePixel = 0
+TextLegendary.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextLegendary.Size = UDim2.new(0, 117, 0, 22)
+TextLegendary.Font = Enum.Font.SourceSans
+TextLegendary.Text = "Legendary"
+TextLegendary.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLegendary.TextSize = 21.000
+TextLegendary.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLegendary.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+Mythic.Name = "Mythic"
+Mythic.Parent = SelectBuy_2
 Mythic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Mythic.BackgroundTransparency = 1.000
-Mythic.BorderColor3 = Color3.fromRGB(19, 11, 126)
+Mythic.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Mythic.BorderSizePixel = 0
-Mythic.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-Mythic.Size = UDim2.new(0, 31, 0, 29)
-Mythic.Font = Enum.Font.SourceSans
-Mythic.Text = "☐"
-Mythic.TextColor3 = Color3.fromRGB(20, 20, 172)
-Mythic.TextSize = 63.000
+Mythic.Position = UDim2.new(0.0505952388, 0, 0.728577614, 0)
+Mythic.Size = UDim2.new(0, 151, 0, 38)
+Mythic.Image = "rbxassetid://103863495321859"
 
-MythicText.Name = "MythicText"
-MythicText.Parent = MythicBrainrot
-MythicText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MythicText.BackgroundTransparency = 1.000
-MythicText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MythicText.BorderSizePixel = 0
-MythicText.Size = UDim2.new(0, 166, 0, 66)
-MythicText.Font = Enum.Font.DenkOne
-MythicText.Text = "Brainrot Mythic"
-MythicText.TextColor3 = Color3.fromRGB(255, 255, 255)
-MythicText.TextSize = 18.000
+MythicButton.Name = "MythicButton"
+MythicButton.Parent = Mythic
+MythicButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MythicButton.BackgroundTransparency = 1.000
+MythicButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MythicButton.BorderSizePixel = 0
+MythicButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+MythicButton.Size = UDim2.new(0, 27, 0, 23)
+MythicButton.Font = Enum.Font.SourceSansBold
+MythicButton.Text = "☐"
+MythicButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+MythicButton.TextSize = 41.000
+MythicButton.TextWrapped = true
 
-local autoBuy6 = {
-	Mythic = false,
-}
-
-
-local lists6 = {
-	Mythic = {
-		["Girafa Celestre $10M"] = true,
-		["Cavallo Virtuoso $40M"] = true,
-		["Matteo $30M"] = true,
-		["Tigroligre Frutonni $20M"] = true,
-		["Frigo Camelo $7.5M"] = true,
-		[""] = true
-	}
-}
-
-
-Rare.MouseButton1Click:Connect(function()
-	autoBuy6.Mythic = not autoBuy6.Mythic
-
-	if autoBuy6.Mythic then
-		Mythic.Text = "▣"
-	else
-		Mythic.Text = "☐"
-	end
-end)
-
-local cooldown6 = {}
-
-local function autoBuy6Func()
-	for _,v in pairs(workspace:GetDescendants()) do
-		if v:IsA("ProximityPrompt") then
-
-			for raridade6,ativo6 in pairs(autoBuy6) do
-
-				if ativo6 and lists6[raridade6] and lists6[raridade6][v.ObjectText] then
-
-					if not cooldown6[v] then
-						cooldown6[v] = true
-
-						fireproximityprompt(v, 1)
-
-						task.delay(2,function()
-							cooldown6[v] = nil
-						end)
-					end
-				end
-			end
-		end
-	end
-end
-
-task.spawn(function()
-	while true do
-		task.wait(0.2)
-		pcall(autoBuy6Func)
-	end
-end)
--------------------------------------------------------------------------------
-SecretBrainrot.Name = "SecretBrainrot"
-SecretBrainrot.Parent = FrameBrainrotBuy
-SecretBrainrot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SecretBrainrot.BackgroundTransparency = 1.000
-SecretBrainrot.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SecretBrainrot.BorderSizePixel = 0
-SecretBrainrot.Position = UDim2.new(0.0976930376, 0, 0.866566777, 0)
-SecretBrainrot.Size = UDim2.new(0, 291, 0, 66)
-SecretBrainrot.Image = "rbxassetid://108930673431145"
-
-Secret.Name = "☐Secret"
-Secret.Parent = SecretBrainrot
+TextMythic.Name = "TextMythic"
+TextMythic.Parent = Mythic
+TextMythic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextMythic.BackgroundTransparency = 1.000
+TextMythic.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextMythic.BorderSizePixel = 0
+TextMythic.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextMythic.Size = UDim2.new(0, 117, 0, 22)
+TextMythic.Font = Enum.Font.SourceSans
+TextMythic.Text = "Mythic"
+TextMythic.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextMythic.TextSize = 21.000
+TextMythic.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextMythic.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+Secret.Name = "Secret"
+Secret.Parent = SelectBuy_2
 Secret.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Secret.BackgroundTransparency = 1.000
-Secret.BorderColor3 = Color3.fromRGB(19, 11, 126)
+Secret.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Secret.BorderSizePixel = 0
-Secret.Position = UDim2.new(0.853211761, 0, 0.215686277, 0)
-Secret.Size = UDim2.new(0, 31, 0, 29)
-Secret.Font = Enum.Font.SourceSans
-Secret.Text = "☐"
-Secret.TextColor3 = Color3.fromRGB(20, 20, 172)
-Secret.TextSize = 63.000
+Secret.Position = UDim2.new(0.0505952388, 0, 0.864024341, 0)
+Secret.Size = UDim2.new(0, 151, 0, 38)
+Secret.Image = "rbxassetid://103863495321859"
 
-SecretText.Name = "SecretText"
-SecretText.Parent = SecretBrainrot
-SecretText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SecretText.BackgroundTransparency = 1.000
-SecretText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-SecretText.BorderSizePixel = 0
-SecretText.Size = UDim2.new(0, 166, 0, 66)
-SecretText.Font = Enum.Font.DenkOne
-SecretText.Text = "Brainrot Secret"
-SecretText.TextColor3 = Color3.fromRGB(255, 255, 255)
-SecretText.TextSize = 18.000
---------------------------------------------------------------------------------------------
-function fecharTudo()
-	AutoFarmAberto.Visible = false
-	PlayersAberto.Visible = false
-end
+SecretButton.Name = "SecretButton"
+SecretButton.Parent = Secret
+SecretButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SecretButton.BackgroundTransparency = 1.000
+SecretButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SecretButton.BorderSizePixel = 0
+SecretButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+SecretButton.Size = UDim2.new(0, 27, 0, 23)
+SecretButton.Font = Enum.Font.SourceSansBold
+SecretButton.Text = "☐"
+SecretButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+SecretButton.TextSize = 41.000
+SecretButton.TextWrapped = true
 
-ButtonOpen.MouseButton1Click:Connect(function()
-	ImgPanelHub.Visible = false
-	ImgPanelConfig.Visible = true
+TextSecret.Name = "TextSecret"
+TextSecret.Parent = Secret
+TextSecret.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextSecret.BackgroundTransparency = 1.000
+TextSecret.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextSecret.BorderSizePixel = 0
+TextSecret.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextSecret.Size = UDim2.new(0, 117, 0, 22)
+TextSecret.Font = Enum.Font.SourceSans
+TextSecret.Text = "Secret"
+TextSecret.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextSecret.TextSize = 21.000
+TextSecret.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextSecret.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+IngredientsT.Name = "IngredientsT"
+IngredientsT.Parent = SelectBuy_2
+IngredientsT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IngredientsT.BackgroundTransparency = 1.000
+IngredientsT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IngredientsT.BorderSizePixel = 2
+IngredientsT.Position = UDim2.new(0, 0, -0.002915452, 0)
+IngredientsT.Size = UDim2.new(0, 125, 0, 24)
+IngredientsT.Font = Enum.Font.SourceSans
+IngredientsT.Text = "Select Brairot"
+IngredientsT.TextColor3 = Color3.fromRGB(255, 255, 255)
+IngredientsT.TextSize = 18.000
+-----------------------------------------------------------------------------------
+closePanel5.Name = "closePanel5"
+closePanel5.Parent = SelectBuy_2
+closePanel5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closePanel5.BackgroundTransparency = 1.000
+closePanel5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closePanel5.BorderSizePixel = 0
+closePanel5.Position = UDim2.new(0.880841911, 0, -0.005830904, 0)
+closePanel5.Size = UDim2.new(0, 20, 0, 22)
+closePanel5.Font = Enum.Font.SourceSansBold
+closePanel5.Text = "x"
+closePanel5.TextColor3 = Color3.fromRGB(255, 255, 255)
+closePanel5.TextScaled = true
+closePanel5.TextSize = 14.000
+closePanel5.TextWrapped = true
 
-	fecharTudo()
+closePanel5.MouseButton1Click:Connect(function()
+	SelectBuy_2.Visible = false
 end)
+-----------------------------------------------------------------------------------
 
-ButtonPrimario.MouseButton1Click:Connect(function()
-	if ImgPanelHub.Visible or ImgPanelConfig.Visible then
-		ImgPanelHub.Visible = false
-		ImgPanelConfig.Visible = false
-		fecharTudo()
-	else
-		ImgPanelHub.Visible = true
-		ImgPanelConfig.Visible = false
-	end
+SelectSell_2.Name = "SelectSell"
+SelectSell_2.Parent = PanelHub
+SelectSell_2.BackgroundColor3 = Color3.fromRGB(11, 11, 11)
+SelectSell_2.BorderColor3 = Color3.fromRGB(28, 30, 130)
+SelectSell_2.BorderSizePixel = 3
+SelectSell_2.Position = UDim2.new(0.836253345, 0, 0.0701697171, 0)
+SelectSell_2.Size = UDim2.new(0, 168, 0, 345)
+SelectSell_2.Visible = false
+-----------------------------------------------------------------------------------
+CommonS.Name = "CommonS"
+CommonS.Parent = SelectSell_2
+CommonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CommonS.BackgroundTransparency = 1.000
+CommonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CommonS.BorderSizePixel = 0
+CommonS.Position = UDim2.new(0.0505952388, 0, 0.0896340236, 0)
+CommonS.Size = UDim2.new(0, 151, 0, 38)
+CommonS.Image = "rbxassetid://103863495321859"
+
+CommonTextS.Name = "CommonTextS"
+CommonTextS.Parent = CommonS
+CommonTextS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CommonTextS.BackgroundTransparency = 1.000
+CommonTextS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CommonTextS.BorderSizePixel = 0
+CommonTextS.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+CommonTextS.Size = UDim2.new(0, 117, 0, 22)
+CommonTextS.Font = Enum.Font.SourceSans
+CommonTextS.Text = "Common"
+CommonTextS.TextColor3 = Color3.fromRGB(255, 255, 255)
+CommonTextS.TextSize = 21.000
+CommonTextS.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+CommonTextS.TextWrapped = true
+CommonTextS.TextXAlignment = Enum.TextXAlignment.Left
+
+CommonButtonS.Name = "CommonButtonS"
+CommonButtonS.Parent = CommonS
+CommonButtonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CommonButtonS.BackgroundTransparency = 1.000
+CommonButtonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CommonButtonS.BorderSizePixel = 0
+CommonButtonS.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+CommonButtonS.Size = UDim2.new(0, 27, 0, 23)
+CommonButtonS.Font = Enum.Font.SourceSansBold
+CommonButtonS.Text = "☐"
+CommonButtonS.TextColor3 = Color3.fromRGB(6, 9, 206)
+CommonButtonS.TextSize = 41.000
+CommonButtonS.TextWrapped = true
+-----------------------------------------------------------------------------------
+UncommonS.Name = "UncommonS"
+UncommonS.Parent = SelectSell_2
+UncommonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UncommonS.BackgroundTransparency = 1.000
+UncommonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UncommonS.BorderSizePixel = 0
+UncommonS.Position = UDim2.new(0.0505952388, 0, 0.220977321, 0)
+UncommonS.Size = UDim2.new(0, 151, 0, 38)
+UncommonS.Image = "rbxassetid://103863495321859"
+
+UncommonButtonS.Name = "UncommonButtonS"
+UncommonButtonS.Parent = UncommonS
+UncommonButtonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UncommonButtonS.BackgroundTransparency = 1.000
+UncommonButtonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UncommonButtonS.BorderSizePixel = 0
+UncommonButtonS.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+UncommonButtonS.Size = UDim2.new(0, 27, 0, 23)
+UncommonButtonS.Font = Enum.Font.SourceSansBold
+UncommonButtonS.Text = "☐"
+UncommonButtonS.TextColor3 = Color3.fromRGB(6, 9, 206)
+UncommonButtonS.TextSize = 41.000
+UncommonButtonS.TextWrapped = true
+
+TextUncommonS.Name = "TextUncommonS"
+TextUncommonS.Parent = UncommonS
+TextUncommonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextUncommonS.BackgroundTransparency = 1.000
+TextUncommonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextUncommonS.BorderSizePixel = 0
+TextUncommonS.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextUncommonS.Size = UDim2.new(0, 117, 0, 22)
+TextUncommonS.Font = Enum.Font.SourceSans
+TextUncommonS.Text = "Uncommon"
+TextUncommonS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextUncommonS.TextSize = 21.000
+TextUncommonS.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextUncommonS.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+RareS.Name = "RareS"
+RareS.Parent = SelectSell_2
+RareS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RareS.BackgroundTransparency = 1.000
+RareS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RareS.BorderSizePixel = 0
+RareS.Position = UDim2.new(0.0505952388, 0, 0.358290762, 0)
+RareS.Size = UDim2.new(0, 151, 0, 38)
+RareS.Image = "rbxassetid://103863495321859"
+
+RareButtonS.Name = "RareButtonS"
+RareButtonS.Parent = RareS
+RareButtonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RareButtonS.BackgroundTransparency = 1.000
+RareButtonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RareButtonS.BorderSizePixel = 0
+RareButtonS.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+RareButtonS.Size = UDim2.new(0, 27, 0, 23)
+RareButtonS.Font = Enum.Font.SourceSansBold
+RareButtonS.Text = "☐"
+RareButtonS.TextColor3 = Color3.fromRGB(6, 9, 206)
+RareButtonS.TextSize = 41.000
+RareButtonS.TextWrapped = true
+
+TextRareS.Name = "TextRareS"
+TextRareS.Parent = RareS
+TextRareS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextRareS.BackgroundTransparency = 1.000
+TextRareS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextRareS.BorderSizePixel = 0
+TextRareS.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextRareS.Size = UDim2.new(0, 117, 0, 22)
+TextRareS.Font = Enum.Font.SourceSans
+TextRareS.Text = "Rare"
+TextRareS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextRareS.TextSize = 21.000
+TextRareS.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextRareS.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+EpicS.Name = "EpicS"
+EpicS.Parent = SelectSell_2
+EpicS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EpicS.BackgroundTransparency = 1.000
+EpicS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EpicS.BorderSizePixel = 0
+EpicS.Position = UDim2.new(0.0505952388, 0, 0.486648977, 0)
+EpicS.Size = UDim2.new(0, 151, 0, 38)
+EpicS.Image = "rbxassetid://103863495321859"
+
+EpicButtonS.Name = "EpicButtonS"
+EpicButtonS.Parent = EpicS
+EpicButtonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EpicButtonS.BackgroundTransparency = 1.000
+EpicButtonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EpicButtonS.BorderSizePixel = 0
+EpicButtonS.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+EpicButtonS.Size = UDim2.new(0, 27, 0, 23)
+EpicButtonS.Font = Enum.Font.SourceSansBold
+EpicButtonS.Text = "☐"
+EpicButtonS.TextColor3 = Color3.fromRGB(6, 9, 206)
+EpicButtonS.TextSize = 41.000
+EpicButtonS.TextWrapped = true
+
+TextEpicS.Name = "TextEpicS"
+TextEpicS.Parent = EpicS
+TextEpicS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextEpicS.BackgroundTransparency = 1.000
+TextEpicS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextEpicS.BorderSizePixel = 0
+TextEpicS.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextEpicS.Size = UDim2.new(0, 117, 0, 22)
+TextEpicS.Font = Enum.Font.SourceSans
+TextEpicS.Text = "Epic"
+TextEpicS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextEpicS.TextSize = 21.000
+TextEpicS.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextEpicS.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+LegendaryS.Name = "LegendaryS"
+LegendaryS.Parent = SelectSell_2
+LegendaryS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LegendaryS.BackgroundTransparency = 1.000
+LegendaryS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LegendaryS.BorderSizePixel = 0
+LegendaryS.Position = UDim2.new(0.0505952388, 0, 0.615007162, 0)
+LegendaryS.Size = UDim2.new(0, 151, 0, 38)
+LegendaryS.Image = "rbxassetid://103863495321859"
+
+LegendaryButtonS.Name = "LegendaryButtonS"
+LegendaryButtonS.Parent = LegendaryS
+LegendaryButtonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LegendaryButtonS.BackgroundTransparency = 1.000
+LegendaryButtonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LegendaryButtonS.BorderSizePixel = 0
+LegendaryButtonS.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+LegendaryButtonS.Size = UDim2.new(0, 27, 0, 23)
+LegendaryButtonS.Font = Enum.Font.SourceSansBold
+LegendaryButtonS.Text = "☐"
+LegendaryButtonS.TextColor3 = Color3.fromRGB(6, 9, 206)
+LegendaryButtonS.TextSize = 41.000
+LegendaryButtonS.TextWrapped = true
+
+TextLegendaryS.Name = "TextLegendaryS"
+TextLegendaryS.Parent = LegendaryS
+TextLegendaryS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLegendaryS.BackgroundTransparency = 1.000
+TextLegendaryS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLegendaryS.BorderSizePixel = 0
+TextLegendaryS.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextLegendaryS.Size = UDim2.new(0, 117, 0, 22)
+TextLegendaryS.Font = Enum.Font.SourceSans
+TextLegendaryS.Text = "Legendary"
+TextLegendaryS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLegendaryS.TextSize = 21.000
+TextLegendaryS.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLegendaryS.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+MythicS.Name = "MythicS"
+MythicS.Parent = SelectSell_2
+MythicS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MythicS.BackgroundTransparency = 1.000
+MythicS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MythicS.BorderSizePixel = 0
+MythicS.Position = UDim2.new(0.0505952388, 0, 0.740380287, 0)
+MythicS.Size = UDim2.new(0, 151, 0, 38)
+MythicS.Image = "rbxassetid://103863495321859"
+
+MythicButtonS.Name = "MythicButtonS"
+MythicButtonS.Parent = MythicS
+MythicButtonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MythicButtonS.BackgroundTransparency = 1.000
+MythicButtonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MythicButtonS.BorderSizePixel = 0
+MythicButtonS.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+MythicButtonS.Size = UDim2.new(0, 27, 0, 23)
+MythicButtonS.Font = Enum.Font.SourceSansBold
+MythicButtonS.Text = "☐"
+MythicButtonS.TextColor3 = Color3.fromRGB(6, 9, 206)
+MythicButtonS.TextSize = 41.000
+MythicButtonS.TextWrapped = true
+
+TextMythicS.Name = "TextMythicS"
+TextMythicS.Parent = MythicS
+TextMythicS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextMythicS.BackgroundTransparency = 1.000
+TextMythicS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextMythicS.BorderSizePixel = 0
+TextMythicS.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextMythicS.Size = UDim2.new(0, 117, 0, 22)
+TextMythicS.Font = Enum.Font.SourceSans
+TextMythicS.Text = "Mythic"
+TextMythicS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextMythicS.TextSize = 21.000
+TextMythicS.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextMythicS.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+SecretS.Name = "SecretS"
+SecretS.Parent = SelectSell_2
+SecretS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SecretS.BackgroundTransparency = 1.000
+SecretS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SecretS.BorderSizePixel = 0
+SecretS.Position = UDim2.new(0.0505952388, 0, 0.865753472, 0)
+SecretS.Size = UDim2.new(0, 151, 0, 38)
+SecretS.Image = "rbxassetid://103863495321859"
+
+SecretButtonS.Name = "SecretButtonS"
+SecretButtonS.Parent = SecretS
+SecretButtonS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SecretButtonS.BackgroundTransparency = 1.000
+SecretButtonS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SecretButtonS.BorderSizePixel = 0
+SecretButtonS.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+SecretButtonS.Size = UDim2.new(0, 27, 0, 23)
+SecretButtonS.Font = Enum.Font.SourceSansBold
+SecretButtonS.Text = "☐"
+SecretButtonS.TextColor3 = Color3.fromRGB(6, 9, 206)
+SecretButtonS.TextSize = 41.000
+SecretButtonS.TextWrapped = true
+
+TextSecretS.Name = "TextSecretS"
+TextSecretS.Parent = SecretS
+TextSecretS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextSecretS.BackgroundTransparency = 1.000
+TextSecretS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextSecretS.BorderSizePixel = 0
+TextSecretS.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextSecretS.Size = UDim2.new(0, 117, 0, 22)
+TextSecretS.Font = Enum.Font.SourceSans
+TextSecretS.Text = "Secret"
+TextSecretS.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextSecretS.TextSize = 21.000
+TextSecretS.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextSecretS.TextXAlignment = Enum.TextXAlignment.Left
+-----------------------------------------------------------------------------------
+Select.Name = "Select"
+Select.Parent = SelectSell_2
+Select.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Select.BackgroundTransparency = 1.000
+Select.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Select.BorderSizePixel = 2
+Select.Position = UDim2.new(0, 0, -0.002915452, 0)
+Select.Size = UDim2.new(0, 125, 0, 24)
+Select.Font = Enum.Font.SourceSans
+Select.Text = "Select Brairot"
+Select.TextColor3 = Color3.fromRGB(255, 255, 255)
+Select.TextSize = 18.000
+-----------------------------------------------------------------------------------
+closePanel3.Name = "closePanel3"
+closePanel3.Parent = SelectSell_2
+closePanel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closePanel3.BackgroundTransparency = 1.000
+closePanel3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closePanel3.BorderSizePixel = 0
+closePanel3.Position = UDim2.new(0.880841911, 0, -0.005830904, 0)
+closePanel3.Size = UDim2.new(0, 20, 0, 22)
+closePanel3.Font = Enum.Font.SourceSansBold
+closePanel3.Text = "x"
+closePanel3.TextColor3 = Color3.fromRGB(255, 255, 255)
+closePanel3.TextScaled = true
+closePanel3.TextSize = 14.000
+closePanel3.TextWrapped = true
+
+closePanel3.MouseButton1Click:Connect(function()
+	SelectSell_2.Visible = false
 end)
+-----------------------------------------------------------------------------------
+IngredientsBuys.Name = "IngredientsBuys"
+IngredientsBuys.Parent = PanelHub
+IngredientsBuys.BackgroundColor3 = Color3.fromRGB(11, 11, 11)
+IngredientsBuys.BorderColor3 = Color3.fromRGB(28, 30, 130)
+IngredientsBuys.BorderSizePixel = 3
+IngredientsBuys.Position = UDim2.new(0.836927235, 0, 0.0734334216, 0)
+IngredientsBuys.Size = UDim2.new(0, 168, 0, 343)
+IngredientsBuys.Visible = false
 
-local dragging = false
-local dragStart
-local startPos
+Star.Name = "Star"
+Star.Parent = IngredientsBuys
+Star.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Star.BackgroundTransparency = 1.000
+Star.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Star.BorderSizePixel = 0
+Star.Position = UDim2.new(0.0505952388, 0, 0.0673850179, 0)
+Star.Size = UDim2.new(0, 151, 0, 38)
+Star.Image = "rbxassetid://103863495321859"
 
-ButtonPrimario.InputBegan:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton1 then
-		dragging = true
-		dragStart = input.Position
-		startPos = ButtonPrimario.Position
+StarText.Name = "StarText"
+StarText.Parent = Star
+StarText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StarText.BackgroundTransparency = 1.000
+StarText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StarText.BorderSizePixel = 0
+StarText.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+StarText.Size = UDim2.new(0, 117, 0, 22)
+StarText.Font = Enum.Font.SourceSans
+StarText.Text = "Star"
+StarText.TextColor3 = Color3.fromRGB(255, 255, 255)
+StarText.TextSize = 21.000
+StarText.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+StarText.TextWrapped = true
+StarText.TextXAlignment = Enum.TextXAlignment.Left
 
-		input.Changed:Connect(function()
-			if input.UserInputState == Enum.UserInputState.End then
-				dragging = false
-			end
-		end)
-	end
-end)
+StarButton.Name = "StarButton"
+StarButton.Parent = Star
+StarButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StarButton.BackgroundTransparency = 1.000
+StarButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+StarButton.BorderSizePixel = 0
+StarButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+StarButton.Size = UDim2.new(0, 27, 0, 23)
+StarButton.Font = Enum.Font.SourceSansBold
+StarButton.Text = "☐"
+StarButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+StarButton.TextSize = 41.000
+StarButton.TextWrapped = true
 
-UIS.InputChanged:Connect(function(input)
-	if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-		local delta = input.Position - dragStart
+Victrola.Name = "Victrola"
+Victrola.Parent = IngredientsBuys
+Victrola.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Victrola.BackgroundTransparency = 1.000
+Victrola.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Victrola.BorderSizePixel = 0
+Victrola.Position = UDim2.new(0.0505952388, 0, 0.195254758, 0)
+Victrola.Size = UDim2.new(0, 151, 0, 38)
+Victrola.Image = "rbxassetid://103863495321859"
 
-		ButtonPrimario.Position = UDim2.new(
-			startPos.X.Scale,
-			startPos.X.Offset + delta.X,
-			startPos.Y.Scale,
-			startPos.Y.Offset + delta.Y
-		)
-	end
+VictrolaButton.Name = "VictrolaButton"
+VictrolaButton.Parent = Victrola
+VictrolaButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VictrolaButton.BackgroundTransparency = 1.000
+VictrolaButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VictrolaButton.BorderSizePixel = 0
+VictrolaButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+VictrolaButton.Size = UDim2.new(0, 27, 0, 23)
+VictrolaButton.Font = Enum.Font.SourceSansBold
+VictrolaButton.Text = "☐"
+VictrolaButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+VictrolaButton.TextSize = 41.000
+VictrolaButton.TextWrapped = true
+
+TextVictrola.Name = "TextVictrola"
+TextVictrola.Parent = Victrola
+TextVictrola.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextVictrola.BackgroundTransparency = 1.000
+TextVictrola.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextVictrola.BorderSizePixel = 0
+TextVictrola.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextVictrola.Size = UDim2.new(0, 117, 0, 22)
+TextVictrola.Font = Enum.Font.SourceSans
+TextVictrola.Text = "Victrola"
+TextVictrola.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextVictrola.TextSize = 21.000
+TextVictrola.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextVictrola.TextXAlignment = Enum.TextXAlignment.Left
+
+IceEmblem.Name = "IceEmblem"
+IceEmblem.Parent = IngredientsBuys
+IceEmblem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IceEmblem.BackgroundTransparency = 1.000
+IceEmblem.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IceEmblem.BorderSizePixel = 0
+IceEmblem.Position = UDim2.new(0.0505952388, 0, 0.329383373, 0)
+IceEmblem.Size = UDim2.new(0, 151, 0, 38)
+IceEmblem.Image = "rbxassetid://103863495321859"
+
+IceEmblemButton.Name = "IceEmblemButton"
+IceEmblemButton.Parent = IceEmblem
+IceEmblemButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IceEmblemButton.BackgroundTransparency = 1.000
+IceEmblemButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IceEmblemButton.BorderSizePixel = 0
+IceEmblemButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+IceEmblemButton.Size = UDim2.new(0, 27, 0, 23)
+IceEmblemButton.Font = Enum.Font.SourceSansBold
+IceEmblemButton.Text = "☐"
+IceEmblemButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+IceEmblemButton.TextSize = 41.000
+IceEmblemButton.TextWrapped = true
+
+TextIceEmblem.Name = "TextIceEmblem"
+TextIceEmblem.Parent = IceEmblem
+TextIceEmblem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextIceEmblem.BackgroundTransparency = 1.000
+TextIceEmblem.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextIceEmblem.BorderSizePixel = 0
+TextIceEmblem.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextIceEmblem.Size = UDim2.new(0, 117, 0, 22)
+TextIceEmblem.Font = Enum.Font.SourceSans
+TextIceEmblem.Text = "IceEmblem"
+TextIceEmblem.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextIceEmblem.TextSize = 21.000
+TextIceEmblem.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextIceEmblem.TextXAlignment = Enum.TextXAlignment.Left
+
+Flower.Name = "Flower"
+Flower.Parent = IngredientsBuys
+Flower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Flower.BackgroundTransparency = 1.000
+Flower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Flower.BorderSizePixel = 0
+Flower.Position = UDim2.new(0.0505952388, 0, 0.455050975, 0)
+Flower.Size = UDim2.new(0, 151, 0, 38)
+Flower.Image = "rbxassetid://103863495321859"
+
+FlowerButton.Name = "FlowerButton"
+FlowerButton.Parent = Flower
+FlowerButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlowerButton.BackgroundTransparency = 1.000
+FlowerButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FlowerButton.BorderSizePixel = 0
+FlowerButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+FlowerButton.Size = UDim2.new(0, 27, 0, 23)
+FlowerButton.Font = Enum.Font.SourceSansBold
+FlowerButton.Text = "☐"
+FlowerButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+FlowerButton.TextSize = 41.000
+FlowerButton.TextWrapped = true
+
+TextFlower.Name = "TextFlower"
+TextFlower.Parent = Flower
+TextFlower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextFlower.BackgroundTransparency = 1.000
+TextFlower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextFlower.BorderSizePixel = 0
+TextFlower.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextFlower.Size = UDim2.new(0, 117, 0, 22)
+TextFlower.Font = Enum.Font.SourceSans
+TextFlower.Text = "Flower"
+TextFlower.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextFlower.TextSize = 21.000
+TextFlower.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextFlower.TextXAlignment = Enum.TextXAlignment.Left
+
+Phone.Name = "Phone"
+Phone.Parent = IngredientsBuys
+Phone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Phone.BackgroundTransparency = 1.000
+Phone.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Phone.BorderSizePixel = 0
+Phone.Position = UDim2.new(0.0505952388, 0, 0.583919227, 0)
+Phone.Size = UDim2.new(0, 151, 0, 38)
+Phone.Image = "rbxassetid://103863495321859"
+
+PhoneButton.Name = "PhoneButton"
+PhoneButton.Parent = Phone
+PhoneButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PhoneButton.BackgroundTransparency = 1.000
+PhoneButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PhoneButton.BorderSizePixel = 0
+PhoneButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+PhoneButton.Size = UDim2.new(0, 27, 0, 23)
+PhoneButton.Font = Enum.Font.SourceSansBold
+PhoneButton.Text = "☐"
+PhoneButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+PhoneButton.TextSize = 41.000
+PhoneButton.TextWrapped = true
+
+TextPhone.Name = "TextPhone"
+TextPhone.Parent = Phone
+TextPhone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextPhone.BackgroundTransparency = 1.000
+TextPhone.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextPhone.BorderSizePixel = 0
+TextPhone.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextPhone.Size = UDim2.new(0, 117, 0, 22)
+TextPhone.Font = Enum.Font.SourceSans
+TextPhone.Text = "Phone"
+TextPhone.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextPhone.TextSize = 21.000
+TextPhone.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextPhone.TextXAlignment = Enum.TextXAlignment.Left
+
+Taco.Name = "Taco"
+Taco.Parent = IngredientsBuys
+Taco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Taco.BackgroundTransparency = 1.000
+Taco.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Taco.BorderSizePixel = 0
+Taco.Position = UDim2.new(0.0505952388, 0, 0.71321553, 0)
+Taco.Size = UDim2.new(0, 151, 0, 38)
+Taco.Image = "rbxassetid://103863495321859"
+
+TacoButton.Name = "TacoButton"
+TacoButton.Parent = Taco
+TacoButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TacoButton.BackgroundTransparency = 1.000
+TacoButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TacoButton.BorderSizePixel = 0
+TacoButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+TacoButton.Size = UDim2.new(0, 27, 0, 23)
+TacoButton.Font = Enum.Font.SourceSansBold
+TacoButton.Text = "☐"
+TacoButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+TacoButton.TextSize = 41.000
+TacoButton.TextWrapped = true
+
+TextTaco.Name = "TextTaco"
+TextTaco.Parent = Taco
+TextTaco.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextTaco.BackgroundTransparency = 1.000
+TextTaco.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextTaco.BorderSizePixel = 0
+TextTaco.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextTaco.Size = UDim2.new(0, 117, 0, 22)
+TextTaco.Font = Enum.Font.SourceSans
+TextTaco.Text = "Taco"
+TextTaco.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextTaco.TextSize = 21.000
+TextTaco.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextTaco.TextXAlignment = Enum.TextXAlignment.Left
+
+Lighter.Name = "Lighter"
+Lighter.Parent = IngredientsBuys
+Lighter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lighter.BackgroundTransparency = 1.000
+Lighter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lighter.BorderSizePixel = 0
+Lighter.Position = UDim2.new(0.0505952388, 0, 0.842511833, 0)
+Lighter.Size = UDim2.new(0, 151, 0, 38)
+Lighter.Image = "rbxassetid://103863495321859"
+
+LighterButton.Name = "LighterButton"
+LighterButton.Parent = Lighter
+LighterButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LighterButton.BackgroundTransparency = 1.000
+LighterButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LighterButton.BorderSizePixel = 0
+LighterButton.Position = UDim2.new(0.778023601, 0, 0.180857003, 0)
+LighterButton.Size = UDim2.new(0, 27, 0, 23)
+LighterButton.Font = Enum.Font.SourceSansBold
+LighterButton.Text = "☐"
+LighterButton.TextColor3 = Color3.fromRGB(6, 9, 206)
+LighterButton.TextSize = 41.000
+LighterButton.TextWrapped = true
+
+TextLighter.Name = "TextLighter"
+TextLighter.Parent = Lighter
+TextLighter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLighter.BackgroundTransparency = 1.000
+TextLighter.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLighter.BorderSizePixel = 0
+TextLighter.Position = UDim2.new(0.059602648, 0, 0.210526317, 0)
+TextLighter.Size = UDim2.new(0, 117, 0, 22)
+TextLighter.Font = Enum.Font.SourceSans
+TextLighter.Text = "Lighter"
+TextLighter.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLighter.TextSize = 21.000
+TextLighter.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLighter.TextXAlignment = Enum.TextXAlignment.Left
+
+IngredientsT_2.Name = "IngredientsT"
+IngredientsT_2.Parent = IngredientsBuys
+IngredientsT_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IngredientsT_2.BackgroundTransparency = 1.000
+IngredientsT_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IngredientsT_2.BorderSizePixel = 2
+IngredientsT_2.Position = UDim2.new(0, 0, -0.002915452, 0)
+IngredientsT_2.Size = UDim2.new(0, 125, 0, 24)
+IngredientsT_2.Font = Enum.Font.SourceSans
+IngredientsT_2.Text = "Ingredients"
+IngredientsT_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+IngredientsT_2.TextSize = 18.000
+
+closePanel4.Name = "closePanel4"
+closePanel4.Parent = IngredientsBuys
+closePanel4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+closePanel4.BackgroundTransparency = 1.000
+closePanel4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+closePanel4.BorderSizePixel = 0
+closePanel4.Position = UDim2.new(0.880841911, 0, -0.005830904, 0)
+closePanel4.Size = UDim2.new(0, 20, 0, 22)
+closePanel4.Font = Enum.Font.SourceSansBold
+closePanel4.Text = "x"
+closePanel4.TextColor3 = Color3.fromRGB(255, 255, 255)
+closePanel4.TextScaled = true
+closePanel4.TextSize = 14.000
+closePanel4.TextWrapped = true
+
+closePanel4.MouseButton1Click:Connect(function()
+	IngredientsBuys.Visible = false
 end)
